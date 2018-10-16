@@ -52,6 +52,12 @@ section{
 .nav-item button{
   color: #ED7600;
 }
+.map{
+  padding: 0;
+}
+.form-control{
+  border-radius: 25px;
+}
 #header{
   background-image: url('../img/background/background.png');
   background-repeat: no-repeat;
