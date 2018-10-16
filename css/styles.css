@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Roboto';           
+  src: url('../css/fonts/Roboto/Roboto-Regular.woff'); 
+  font-weight: 400;              
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';           
+  src: url('../css/fonts/Roboto/Roboto-Medium.woff'); 
+  font-weight: 500;              
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Condesed";  
+  src: url("../css/fonts/Roboto_Condesed/RobotoCondesed-Regular.woff"); 
+  font-style: 400; 
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto Condesed";  
+  src: url("../css/fonts/Roboto_Condesed/RobotoCondesed-Bold.woff"); 
+  font-style: 700; 
+  font-weight: normal;
+}
+section{
+  
+}
+.bgDark{
+  background-color: #111;
+  color: #fff;
+}
+.bgLight{
+  background-color: #FEF6F5;
+  color: #111;
+}
+.bgDark button{
+	color: #fff;
+}
+.bgLight button{
+	color: #111;
+}
+.orangeBtn{
+  border: 1px solid  #ED7600;
+  border-radius: 20px;
+  background-color: #ED7600;
+}
+.orderCallBtn{
+  background: transparent;
+  width: 140px;
+  height: 35px;
+}
+.nav-item button{
+  color: #ED7600;
+}
+#header{
+  background-image: url('../img/background/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
