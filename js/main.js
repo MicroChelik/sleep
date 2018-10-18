@@ -5,13 +5,15 @@ $(document).ready(function() {
     		    infinite: true,
     		    slidesToShow: 1,
     		    slidesToScroll: 1,
-    		    arrows: true
+    		    prevArrow: '.prev2',
+        		nextArrow: '.next2'
   		    });
   		    $('.mattressSlider').slick({
     		    infinite: true,
     		    slidesToShow: 1,
     		    slidesToScroll: 1,
-    		    arrows: true
+    		    prevArrow: '.prev',
+        		nextArrow: '.next'
   		    });
     	} else {
     		$('.advantagesSlider').slick('unslick');

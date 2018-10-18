@@ -1,46 +1,51 @@
-@font-face {
-  font-family: 'Roboto';           
-  src: url('../css/fonts/Roboto/Roboto-Regular.woff'); 
-  font-weight: 400;              
-  font-style: normal;
+
+@font-face{
+	font-family: Myfont;
+  src:		
+    local("./css/fonts/Roboto_Condesed/RobotoCondesed-Bold.ttf"),
+    url("./css/fonts/Roboto_Condesed/RobotoCondesed-Bold.ttf");
 }
-@font-face {
-  font-family: 'Roboto';           
-  src: url('../css/fonts/Roboto/Roboto-Medium.woff'); 
-  font-weight: 500;              
-  font-style: normal;
+.oo{
+  font-family: Myfont !important;
 }
-@font-face {
-  font-family: "Roboto Condesed";  
-  src: url("../css/fonts/Roboto_Condesed/RobotoCondesed-Regular.woff"); 
-  font-style: 400; 
-  font-weight: normal;
+@media (min-width: 992px){
+  .aboutOctaspring{
+  background-image: url(../img/background/group.png);
+  height: 600px;
+  }
+  .advantagesSlider img{
+  	float: left;
+  	padding: 20px;
+  }
+  .advantagesSlider p{
+  	text-align: left !important;
+  }
 }
-@font-face {
-  font-family: "Roboto Condesed";  
-  src: url("../css/fonts/Roboto_Condesed/RobotoCondesed-Bold.woff"); 
-  font-style: 700; 
-  font-weight: normal;
+h2{
+  text-align: center;
+  margin-bottom: 60px;
 }
-section{
-  
+ol{
+  padding-left: 15px;
 }
 .animated-modal {
-  max-width: 550px;
+  max-width: 800px;
   border-radius: 4px;
   overflow: hidden;
 
   transform: translateY(-50px);
   transition: all .7s;
 }
+.animated-modal p,
 .animated-modal ol,
-.animated-modal textarea,
 .animated-modal li,
-.animated-modal img,
-.animated-modal input,
-.animated-modal button,
 .animated-modal h2,
-.animated-modal p {
+.animated-modal img,
+.animated-modal span,
+.animated-modal input,
+.animated-modal select,
+.animated-modal button,
+.animated-modal textarea {
   transform: translateY(-50px);
   opacity: 0;
   
@@ -50,14 +55,16 @@ section{
 
 /* Final state */
 .fancybox-slide--current .animated-modal,
+.fancybox-slide--current .animated-modal p,
+.fancybox-slide--current .animated-modal h2,
 .fancybox-slide--current .animated-modal ol,
 .fancybox-slide--current .animated-modal li,
 .fancybox-slide--current .animated-modal img,
+.fancybox-slide--current .animated-modal span,
 .fancybox-slide--current .animated-modal input,
+.fancybox-slide--current .animated-modal select,
 .fancybox-slide--current .animated-modal button,
-.fancybox-slide--current .animated-modal textarea,
-.fancybox-slide--current .animated-modal h2,
-.fancybox-slide--current .animated-modal p {
+.fancybox-slide--current .animated-modal textarea {
   transform: translateY(0);
   opacity: 1;
 }
@@ -66,17 +73,26 @@ section{
 .fancybox-slide--current .animated-modal h2 {
   transition-delay: .1s;
 }
+.fancybox-slide--current .animated-modal p,
 .fancybox-slide--current .animated-modal ol,
 .fancybox-slide--current .animated-modal li,
 .fancybox-slide--current .animated-modal img,
+.fancybox-slide--current .animated-modal span,
 .fancybox-slide--current .animated-modal input,
+.fancybox-slide--current .animated-modal select,
 .fancybox-slide--current .animated-modal button,
-.fancybox-slide--current .animated-modal textarea,
-.fancybox-slide--current .animated-modal p {
+.fancybox-slide--current .animated-modal textarea {
   transition-delay: .3s;
+}
+.arrows{
+  position: relative;
+  top: -130px;
 }
 .orangeMark li{
   color: #ED7600;
+}
+.orangeMark ul{
+	padding-left: 15px;
 }
 .orangeMark li span,
 .orangeMark li p{
@@ -92,10 +108,23 @@ section{
   margin-bottom: 20px;
 }
 .aboutMattress{
-	height: 12em;
+  height: 12em;
 }
 .composition{
-	height: 20em;
+  height: 20em;
+}
+.orangeText span{
+  color: #ED7600;
+}
+.floatLeft{
+  float: left;
+}
+.footer img{
+	float: left;
+	padding: 0px 10px 10px 0px;
+}
+.footer p{
+	margin: 0 !important;
 }
 .price{
 	height: 4em;
@@ -130,6 +159,7 @@ section{
   color: #ED7600 !important;
   min-height: 41px;
   min-width: 176px;
+  margin-bottom: 25px;
 }
 .orderMattressBtn{
   min-height: 46px;
@@ -165,6 +195,18 @@ section{
   max-width: 40px;
   margin: auto
 }
+.img2And6Margin{
+  margin-top: 12px !important;
+}
+.img4Margin{
+  margin-top: 7px !important;
+}
+.img
+.icons div{
+	height: 40px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
 .card-body img{
   max-height: 40px;
   max-width: 40px;
@@ -173,17 +215,22 @@ section{
 .card-body ol{
 	padding-left: 20px;
 }
-.certification{
-	padding-left: 15px;
-}
 .advantagesSlider img{
 	margin: auto;
 }
 .advantagesSlider p{
 	text-align: center;
 }
+.workTime{
+	margin: 0;
+}
 #header{
   background-image: url('../img/background/background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  height: 800px;
+}
+#selectCity{
+	background: #ED7600;
+	color: #111;
 }
