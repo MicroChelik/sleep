@@ -15,18 +15,22 @@
 <body>
 	<section class="bgDark" id="header">
 		<div class="container">
-			<div class="row justify-content-between">
+			<div class="row firstRow">
 				<div class="d-none d-lg-block col-lg-3">
 					<img src="img/logos/logo_header.png" class="floatLeft">
 					<span>НАШ ОСНОВНОЙ САЙТ</span>
 					<span>РУСОН.РФ</span>
 				</div>
-				<div class="d-none d-lg-block col-lg-4">
-					<span>8 (3412) 31-09-06, 8-922-687-62-11</span>
-					<span>RUSON.IZH@YANDEX.RU</span>
-					<a data-fancybox data-animation-duration="700" data-src="#orderCallModal" href="javascript:;">
-						<button class="orangeBtn orderCallBtn">Заказать звонок</button>
-					</a>
+				<div class="d-none d-lg-block col-lg-3 ml-auto text-right">
+						<span>8 (3412) 31-09-06, 8-922-687-62-11</span>
+						<span>RUSON.IZH@YANDEX.RU</span>
+				</div>
+				<div class="d-none d-lg-block col-lg-auto">
+					<div>
+						<a data-fancybox data-animation-duration="700" data-src="#orderCallModal" href="javascript:;">
+							<button class="orangeBtn orderCallBtn headerBtn">Заказать звонок</button>
+						</a>
+					</div>
 					<div style="display: none;" id="orderCallModal" class="animated-modal">
 						<h2>ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h2>
 						<div class="form-group">
@@ -36,61 +40,40 @@
 							<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
 						</div>
 						<button type="submit" class="orangeBtn" id="">Заказать звонок</button>
-						<p>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. Узнать больше</p>
+						<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
 					</div>
 				</div>
 			</div>
-			<!-- <div class="row">
-				<div class="`col-lg-5">
-					<div class="row w-100">
-						<div class="col-4">
-							<a href="">
-								<span>Что такое OCTASPRING ?</span>
-							</a>
-						</div>
-						<div class="col-4">
-							<a href="">
-								<span>Преимущества</span>
-							</a>
-						</div>
-						<div class="col-4">
-							<a href="">
-								<span>Продукция</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2">
-					<img src="img/logos/logo.png">
-				</div>
-				<div class="col-lg-5">
-					<div class="row">
-						<div class="col-4">
-							<a href="">
-								<span>Сертификация</span>
-							</a>
-						</div>
-						<div class="col-4">
-							<a href="">
-								<span>Помощь</span>
-							</a>
-						</div>
-						<div class="col-4">
-							<a href="">
-								<span>Контакты</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div> -->
+			<div class="row menu">
+		 	    <div class="col-lg-5">
+		 	      	<div class="left-menu">
+		 	        	<div class="item"><a href="">Что такое OCTASPRING ?</a></div>
+		 	        	<div class="item"><a href="">Преимущества</a></div>
+		 	        	<div class="item"><a href="">Продукция</a></div>
+		 	    	</div>
+		 	    </div>
+		 	    <div class="col-lg-2">
+		 	    	<div class="center-menu">
+		 	        	<img src="img/logos/logo.png">
+		 	    	</div>
+		 	    </div>
+		 	    <div class="col-lg-5">
+		 	      	<div class="right-menu">
+		 	        	<div class="item"><a href="">Сертификация</a></div>
+		 	        	<div class="item"><a href="">Помощь</a></div>
+		 	        	<div class="item"><a href="">Контакты</a></div>
+		 	      	</div>
+		 	    </div>
+		 	  </div>
+		 	</div>
 			<nav class="navbar">
-				<div>
+				<div class="d-block d-lg-none">
 					<a class="navbar-brand" href="#">
 	    				<img src="img/logos/logo.png" alt="">
 					</a>
 				</div>
 				<button class="navbar-toggler d-lg-none d-inline-block" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	   				 <span class="navbar-toggler-icon"><img src="img/Group.png"></span>
+	   				 <span class="navbar-toggler-icon" id="toggle"><img src="img/Group.png"></span>
 	  			</button>
 	 			<div class="collapse navbar-collapse" id="navbarNav">
 	 				<ul class="navbar-nav">
@@ -131,13 +114,11 @@
 	 			</div>
 			</nav>
 		</div>
-		<div class="container">
-			<div class="row">
+		<div class="container" id="headerContent">
+			<div class="row align-items-center">
 				<div class="col-12 col-lg-8 ml-lg-auto">
  					<h1 class="oo">Революционная концепция долговечности и комфорта.</h1>
- 					<p class="oo">Фабрика «РуСон» является единственным официальным представителем  OCTASPRING в Удмуртской республике.</p>
- 				</div>
- 				<div class="col-12 col-lg-8 ml-lg-auto">
+ 					<p class="oo">Фабрика «РуСон» является единственным официальным представителем  OCTASPRING в Удмуртской республике.</p>	
  					<button class="orangeBtn catalogBtn">КАТАЛОГ ПРОДУКЦИИ</button>
  				</div>
  			</div>
@@ -165,54 +146,102 @@
 					<h2>Преимущества</h2>
 				</div>
 			</div>
-				<div class="advantagesSlider row align-items-center">
+				<div class="advantagesSlider row">
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/1.png">
-						<p>В 8 раз выше воздухопроницаемость, терморегуляция во время сна</p>
+						<div>
+							<img src="img/icons/advantagesIcons/1.png">
+						</div>
+						<div>
+							<p>В 8 раз выше воздухопроницаемость, терморегуляция во время сна</p>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/2.png">
-						<p>Малый вес изделия. В 1.5 раза легче изделий с металлической пружиной</p>
+					 	<div>
+							<img src="img/icons/advantagesIcons/2.png">
+						</div>
+						<div>
+							<p>Малый вес изделия. В 1.5 раза легче изделий с металлической пружиной</p>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/3.png">
-						<p>Сделаны из гипоаллергенных и абсолютно безопасных материалов</p>
+						<div>	
+							<img src="img/icons/advantagesIcons/3.png">
+						</div>
+						<div>
+							<p>Сделаны из гипоаллергенных и абсолютно безопасных материалов</p>
+						</div>					
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/4.png">
-						<p>Экологичны. Изготовлены без тяжелых металлов и запрещенных фталатов</p>
+						<div>
+							<img src="img/icons/advantagesIcons/4.png">
+						</div>
+						<div>
+							<p>Экологичны. Изготовлены без тяжелых металлов и запрещенных фталатов</p>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/5balance.png">
-						<p>Подходит для пар со значительной разницей в весе</p>
+						<div>
+							<img src="img/icons/advantagesIcons/5balance.png">
+						</div>
+						<div>
+							<p>Подходит для пар со значительной разницей в весе</p>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/6.png">
-						<p>Действует система зонирования, которая подстраивается под тело человека</p>
+						<div>
+							<img src="img/icons/advantagesIcons/6.png">
+						</div>
+						<div>
+							<p>Действует система зонирования, которая подстраивается под тело человека</p>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/7.png">
-						<p>Ортопедический эффект за счет большого количества пружин (100шт/м 2)</p>
+						<div>
+							<img src="img/icons/advantagesIcons/7.png">
+						</div>
+						<div>
+							<p>Ортопедический эффект за счет большого количества пружин (100шт/м 2)</p>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/8.png">
-						<p>Матрасы подходят для трансформируемых оснований</p>
+						<div>
+							<img src="img/icons/advantagesIcons/8.png">
+						</div>	
+						<div>
+							<p>Матрасы подходят для трансформируемых оснований</p>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/9.png">
-						<p>Снимает усталость и быстро востанавливает силы</p>
+						<div>
+							<img src="img/icons/advantagesIcons/9.png">
+						</div>
+						<div>
+							<p>Снимает усталость и быстро востанавливает силы</p>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/10.png">
-						<p>Разная степень жесткости, мягче для головы и плеча, жестче для бедер и спины</p>
+						<div>
+							<img src="img/icons/advantagesIcons/10.png">
+						</div>
+						<div>
+							<p>Разная степень жесткости, мягче для головы и плеча, жестче для бедер и спины</p>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/11.png">
-						<p>Независимая работа пружины на 360 обеспечивает отсутствие эффекта волны</p>
+						<div>
+							<img src="img/icons/advantagesIcons/11.png">
+						</div>
+						<div>
+							<p>Независимая работа пружины на 360 обеспечивает отсутствие эффекта волны</p>
+						</div>
 					</div>
 					<div class="col-12 col-lg-4 col-md-6">
-						<img src="img/icons/advantagesIcons/12.png">
-						<p>Высокая долговечность матраса достигается благодаря высокоплотным материалам</p>
+						<div>
+							<img src="img/icons/advantagesIcons/12.png">
+						</div>
+						<div>
+							<p>Высокая долговечность матраса достигается благодаря высокоплотным материалам</p>
+						</div>
 					</div>
 				</div>
 				<div class="row justify-content-between arrows">
@@ -290,7 +319,7 @@
 							<button class="orangeBtn orderMattressBtn">Заказать</button>
 							</a>
 							<div style="display: none;" id="cottonModal" class="animated-modal">
-								<div class="row">
+								<div class="row align-items-center">
 									<div class="col-12 col-lg-6">
 										<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас COTTON">
 									</div>
@@ -310,22 +339,22 @@
 									<div class="col-12 icons">
 										<div class="row">
 											<div class="col-4 col-md-2">
-												<img src="img/icons/mattressIcons/1.png">
+												<div><img src="img/icons/mattressIcons/1.png"></div>
 											</div>
 											<div class="col-4 col-md-2">
-												<img src="img/icons/mattressIcons/2.png" class="img2And6Margin">
+												<div><img src="img/icons/mattressIcons/2.png" class="img2And6Margin"></div>
 											</div>
 											<div class="col-4 col-md-2">
-												<img src="img/icons/mattressIcons/3.png">
+												<div><img src="img/icons/mattressIcons/3.png"></div>
 											</div>
 											<div class="col-4 col-md-2">
-												<img src="img/icons/mattressIcons/4.png" class="img4Margin">
+												<div><img src="img/icons/mattressIcons/4.png" class="img4Margin"></div>
 											</div>
 											<div class="col-4 col-md-2">
-												<img src="img/icons/mattressIcons/5.png">
+												<div><img src="img/icons/mattressIcons/5.png"></div>
 											</div>
 											<div class="col-4 col-md-2">
-												<img src="img/icons/mattressIcons/6.png" class="img2And6Margin">
+												<div><img src="img/icons/mattressIcons/6.png" class="img2And6Margin"></div>
 											</div>
 										</div>
 									</div>
@@ -336,31 +365,35 @@
 									</div>
 									<div class="col-12">
 										<form>
-											<div class="row">
-											 	<div class="col-12 col-lg-6">
-											    	<span>Выберите размер:</span>
-													<select class="form-control" id="">
-														<option><span>20 х 120 см</span><span>9300 руб</span></option>
-		      											<option>2<span></span><span></span></option>
-		      											<option>3<span></span><span></span></option>
-		      											<option>4<span></span><span></span></option>
-		      											<option>5<span></span><span></span></option>
-													</select>
-											    </div>
-											 	 <div class="col-12 col-lg-6">
-											    	<span>Здесь цены выбранного матраса</span>
-											  	</div>
-											  	<div class="col-12">
-								    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
-								   				</div>
-								   				<div class="col-12">
-								    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
-								   				</div>
-								   				<div class="col-12">
-								    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
-								   				</div>
-								   				<button type="submit" class="orangeBtn" id="">Заказать</button>
-								   				<p>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. Узнать больше</p>
+											<div class="row justify-content-center">
+												<form>
+												 	<div class="col-12 col-lg-6 form-group">
+												    	<span>Выберите размер:</span>
+														<select class="form-control" id="">
+															<option><span>20 х 120 см</span><span>9300 руб</span></option>
+			      											<option>2<span></span><span></span></option>
+			      											<option>3<span></span><span></span></option>
+			      											<option>4<span></span><span></span></option>
+			      											<option>5<span></span><span></span></option>
+														</select>
+												    </div>
+												 	 <div class="col-12 col-lg-6">
+												    	<span>Здесь цены выбранного матраса</span>
+												  	</div>
+												  	<div class="col-12 form-group">
+									    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
+									   				</div>
+									   				<div class="col-12 form-group">
+									    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
+									   				</div>
+									   				<div class="col-12 form-group">
+									    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									   				</div>
+									   				<div class="col-6">			
+									   					<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   				</div>
+									   				<p Узнать больше>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+									   			</form>
 											</div>
 										</form>
 									</div>
@@ -416,7 +449,7 @@
 								<button class="orangeBtn orderMattressBtn">Заказать</button>
 							</a>
 							<div style="display: none;" id="velvetModal" class="animated-modal">
-								<div class="row">
+								<div class="row align-items-center">
 									<div class="col-12 col-lg-6">
 										<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас COTTON">
 									</div>
@@ -462,31 +495,35 @@
 									</div>
 									<div class="col-12">
 										<form>
-											<div class="row">
-											 	<div class="col-12 col-lg-6">
-											    	<span>Выберите размер:</span>
-													<select class="form-control" id="">
-														<option><span>20 х 120 см</span><span>9300 руб</span></option>
-		      											<option>2<span></span><span></span></option>
-		      											<option>3<span></span><span></span></option>
-		      											<option>4<span></span><span></span></option>
-		      											<option>5<span></span><span></span></option>
-													</select>
-											    </div>
-											 	 <div class="col-12 col-lg-6">
-											    	<span>Здесь цены выбранного матраса</span>
-											  	</div>
-											  	<div class="col-12">
-								    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
-								   				</div>
-								   				<div class="col-12">
-								    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
-								   				</div>
-								   				<div class="col-12">
-								    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
-								   				</div>
-								   				<button type="submit" class="orangeBtn" id="">Заказать</button>
-								   				<p>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. Узнать больше</p>
+											<div class="row justify-content-center">
+												<form>
+												 	<div class="col-12 col-lg-6 form-group">
+												    	<span>Выберите размер:</span>
+														<select class="form-control" id="">
+															<option><span>20 х 120 см</span><span>9300 руб</span></option>
+			      											<option>2<span></span><span></span></option>
+			      											<option>3<span></span><span></span></option>
+			      											<option>4<span></span><span></span></option>
+			      											<option>5<span></span><span></span></option>
+														</select>
+												    </div>
+												 	 <div class="col-12 col-lg-6">
+												    	<span>Здесь цены выбранного матраса</span>
+												  	</div>
+												  	<div class="col-12 form-group">
+									    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
+									   				</div>
+									   				<div class="col-12 form-group">
+									    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
+									   				</div>
+									   				<div class="col-12 form-group">
+									    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									   				</div>
+									   				<div class="col-6">	
+									   					<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   				</div>
+									   				<p Узнать больше>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+									   			</form>
 											</div>
 										</form>
 									</div>
@@ -543,7 +580,7 @@
 								<button class="orangeBtn orderMattressBtn">Заказать</button>
 							</a>
 							<div style="display: none;" id="tweedModal" class="animated-modal">
-								<div class="row">
+								<div class="row align-items-center">
 									<div class="col-12 col-lg-6">
 										<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас COTTON">
 									</div>
@@ -589,31 +626,35 @@
 									</div>
 									<div class="col-12">
 										<form>
-											<div class="row">
-											 	<div class="col-12 col-lg-6">
-											    	<span>Выберите размер:</span>
-													<select class="form-control" id="">
-														<option><span>20 х 120 см</span><span>9300 руб</span></option>
-		      											<option>2<span></span><span></span></option>
-		      											<option>3<span></span><span></span></option>
-		      											<option>4<span></span><span></span></option>
-		      											<option>5<span></span><span></span></option>
-													</select>
-											    </div>
-											 	 <div class="col-12 col-lg-6">
-											    	<span>Здесь цены выбранного матраса</span>
-											  	</div>
-											  	<div class="col-12">
-								    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
-								   				</div>
-								   				<div class="col-12">
-								    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
-								   				</div>
-								   				<div class="col-12">
-								    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
-								   				</div>
-								   				<button type="submit" class="orangeBtn" id="">Заказать</button>
-								   				<p>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. Узнать больше</p>
+											<div class="row justify-content-center">
+												<form>
+												 	<div class="col-12 col-lg-6 form-group">
+												    	<span>Выберите размер:</span>
+														<select class="form-control" id="">
+															<option><span>20 х 120 см</span><span>9300 руб</span></option>
+			      											<option>2<span></span><span></span></option>
+			      											<option>3<span></span><span></span></option>
+			      											<option>4<span></span><span></span></option>
+			      											<option>5<span></span><span></span></option>
+														</select>
+												    </div>
+												 	 <div class="col-12 col-lg-6">
+												    	<span>Здесь цены выбранного матраса</span>
+												  	</div>
+												  	<div class="col-12 form-group">
+									    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
+									   				</div>
+									   				<div class="col-12 form-group">
+									    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
+									   				</div>
+									   				<div class="col-12 form-group">
+									    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									   				</div>
+									   				 <div class="col-6">
+									   					<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   				</div>
+									   				<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+									   			</form>
 											</div>
 										</form>
 									</div>
@@ -670,7 +711,7 @@
 								<button class="orangeBtn orderMattressBtn">Заказать</button>
 							</a>
 							<div style="display: none;" id="satinModal" class="animated-modal">
-								<div class="row">
+								<div class="row align-items-center">
 									<div class="col-12 col-lg-6">
 										<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас COTTON">
 									</div>
@@ -714,31 +755,35 @@
 									</div>
 									<div class="col-12">
 										<form>
-											<div class="row">
-											 	<div class="col-12 col-lg-6">
-											    	<span>Выберите размер:</span>
-													<select class="form-control" id="">
-														<option><span>20 х 120 см</span><span>9300 руб</span></option>
-		      											<option>2<span></span><span></span></option>
-		      											<option>3<span></span><span></span></option>
-		      											<option>4<span></span><span></span></option>
-		      											<option>5<span></span><span></span></option>
-													</select>
-											    </div>
-											 	 <div class="col-12 col-lg-6">
-											    	<span>Здесь цены выбранного матраса</span>
-											  	</div>
-											  	<div class="col-12">
-								    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
-								   				</div>
-								   				<div class="col-12">
-								    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
-								   				</div>
-								   				<div class="col-12">
-								    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
-								   				</div>
-								   				<button type="submit" class="orangeBtn" id="">Заказать</button>
-								   				<p>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. Узнать больше</p>
+											<div class="row justify-content-center">
+												<form>
+												 	<div class="col-12 col-lg-6 form-group">
+												    	<span>Выберите размер:</span>
+														<select class="form-control" id="">
+															<option><span>20 х 120 см</span><span>9300 руб</span></option>
+			      											<option>2<span></span><span></span></option>
+			      											<option>3<span></span><span></span></option>
+			      											<option>4<span></span><span></span></option>
+			      											<option>5<span></span><span></span></option>
+														</select>
+												    </div>
+												 	 <div class="col-12 col-lg-6">
+												    	<span>Здесь цены выбранного матраса</span>
+												  	</div>
+												  	<div class="col-12 form-group">
+									    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
+									   				</div>
+									   				<div class="col-12 form-group">
+									    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
+									   				</div>
+									   				<div class="col-12 form-group">
+									    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									   				</div>
+									   				<div class="col-6">
+									   					<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   				</div>
+									   				<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+									   			</form>
 											</div>
 										</form>
 									</div>
@@ -796,7 +841,7 @@
 								<button class="orangeBtn orderMattressBtn">Заказать</button>
 							</a>
 							<div style="display: none;" id="flannelModal" class="animated-modal">
-								<div class="row">
+								<div class="row align-items-center">
 									<div class="col-12 col-lg-6">
 										<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас COTTON">
 									</div>
@@ -844,31 +889,35 @@
 									</div>
 									<div class="col-12">
 										<form>
-											<div class="row">
-											 	<div class="col-12 col-lg-6">
-											    	<span>Выберите размер:</span>
-													<select class="form-control" id="">
-														<option><span>20 х 120 см</span><span>9300 руб</span></option>
-		      											<option>2<span></span><span></span></option>
-		      											<option>3<span></span><span></span></option>
-		      											<option>4<span></span><span></span></option>
-		      											<option>5<span></span><span></span></option>
-													</select>
-											    </div>
-											 	 <div class="col-12 col-lg-6">
-											    	<span>Здесь цены выбранного матраса</span>
-											  	</div>
-											  	<div class="col-12">
-								    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
-								   				</div>
-								   				<div class="col-12">
-								    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
-								   				</div>
-								   				<div class="col-12">
-								    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
-								   				</div>
-								   				<button type="submit" class="orangeBtn" id="">Заказать</button>
-								   				<p>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. Узнать больше</p>
+											<div class="row justify-content-center">
+												<form>
+												 	<div class="col-12 col-lg-6 form-group">
+												    	<span>Выберите размер:</span>
+														<select class="form-control" id="">
+															<option><span>20 х 120 см</span><span>9300 руб</span></option>
+			      											<option>2<span></span><span></span></option>
+			      											<option>3<span></span><span></span></option>
+			      											<option>4<span></span><span></span></option>
+			      											<option>5<span></span><span></span></option>
+														</select>
+												    </div>
+												 	 <div class="col-12 col-lg-6">
+												    	<span>Здесь цены выбранного матраса</span>
+												  	</div>
+												  	<div class="col-12 form-group">
+									    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
+									   				</div>
+									   				<div class="col-12 form-group">
+									    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
+									   				</div>
+									   				<div class="col-12 form-group">
+									    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									   				</div>
+									   				<div class="col-6">
+									   					<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   				</div>
+									   				<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+									   			</form>
 											</div>
 										</form>
 									</div>
@@ -884,10 +933,10 @@
 	<section class="bgDark">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="d-none d-lg-block col-lg-4">
+				<div class="d-none d-lg-block col-lg-3">
 					<img src="img/logos/certipur_logo.png">
 				</div>
-				<div class="col-12 col-lg-7 orangeMark">
+				<div class="col-12 col-lg-7 mr-auto orangeMark">
 					<h2>Сертификация</h2>
 					<p>Продукция имеет европейский сертификат экологической безопасности CertiPUR. Это означает, что материал матрасов изготовлен:</p>				
 					<ul>
@@ -924,7 +973,7 @@
 				<div class="col-12">
 					<h2>Остались вопросы?</h2>
 				</div>
-				<div class="col-12">
+				<div class="col-12 text-center">
 					<p>оставьте свои контактные данные, и мы свяжемся с вами в течении 10 минут</p>
 				</div>
 				<form class="form-row justify-content-center">
@@ -938,8 +987,8 @@
      					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
     				</div>
     				<div class="col-md-4">
-    					<button type="submit" class="orangeBtn callBtn">Перезвоните мне</button> <!-- СДЕЛАТЬ В ПОЛНЫЙ РАЗМЕР С ИНПУТАМИ -->
-    					<p>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. Узнать больше</p>
+    					<button type="submit" class="orangeBtn longBtn">Перезвоните мне</button> <!-- СДЕЛАТЬ В ПОЛНЫЙ РАЗМЕР С ИНПУТАМИ -->
+    					<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
     				</div>
 				</form>
 			</div>
@@ -949,8 +998,13 @@
 	<section class="bgDark">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-12 col-md-5 orangeMark">
+				<div class="col-12">
 					<h2>Контакты</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-5 orangeMark">
+					
 					<select class="form-control" id="selectCity">
 						<option>Ижевск</option>
 						<option>Город2</option>
@@ -1001,7 +1055,7 @@
 							<textarea class="form-control" id="" rows="3"></textarea>		
 						</div>
 						<button type="submit" class="orangeBtn" id="">Заказать</button>
-						<p>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. Узнать больше</p>
+						<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
 					</div>
 				</div>
 				<div class="col-12 col-md-7 map">
@@ -1031,7 +1085,7 @@
 		</div>
 	</section>
 
-
+	<DIV ID = "toTop" ><img src="img/icons/top.png"> </ DIV >
 	<script src="js/main.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>

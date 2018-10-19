@@ -1,32 +1,99 @@
+@font-face{
+
+font-family: 'RobotoRegular';
+
+src: url('../fonts/Roboto-Regular-webfont.woff');
+
+src: url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
 
 @font-face{
-	font-family: Myfont;
-  src:		
-    local("./css/fonts/Roboto_Condesed/RobotoCondesed-Bold.ttf"),
-    url("./css/fonts/Roboto_Condesed/RobotoCondesed-Bold.ttf");
+
+font-family: 'RobotoCondesedRegular';
+
+src: url('../fonts/RobotoCondensed-Regular-webfont.woff');
+
+src: url('../fonts/RobotoCondensed-Regular-webfont.woff') format('woff');
+
+font-weight: normal;
+
+font-style: normal;
+
 }
-.oo{
-  font-family: Myfont !important;
+
+
+@font-face{
+
+font-family: 'RobotoCondesedBold';
+
+src: url('../fonts/RobotoCondensed-Bold-webfont.woff');
+
+src: url('../fonts/RobotoCondensed-Bold-webfont.woff') format('woff');
+
+font-weight: bold;
+
+font-style: normal;
+
 }
+
 @media (min-width: 992px){
   .aboutOctaspring{
   background-image: url(../img/background/group.png);
   height: 600px;
   }
-  .advantagesSlider img{
-  	float: left;
-  	padding: 20px;
-  }
+
   .advantagesSlider p{
   	text-align: left !important;
+  	margin: auto;
+  	line-height: 18px;
+  	padding-left: 10px;
   }
+
+  h1{
+  	margin-top: 200px;
+  }
+
+  .map ymaps{
+  border-radius: 25px;
+  }
+  .advantagesSlider div{
+  	display: flex;
+  }
+}
+body{
+  font-family: 'RobotoCondesedRegular', sans-serif; 
 }
 h2{
   text-align: center;
   margin-bottom: 60px;
+  padding-top: 20px;
 }
 ol{
   padding-left: 15px;
+}
+h2,h1{
+ font-family: 'RobotoCondesedBold', sans-serif;
+ font-weight: bold;
+}
+a{
+  color: #fff;
+}
+.a{
+  width: 465px;
+  height: 46px;
+}
+.b{
+  width: 222px;
+  height: 46px;
+}
+.c{
+ width: 453px;
+ height: 46px;
 }
 .animated-modal {
   max-width: 800px;
@@ -53,7 +120,6 @@ ol{
   transition-duration: .4s;
 }
 
-/* Final state */
 .fancybox-slide--current .animated-modal,
 .fancybox-slide--current .animated-modal p,
 .fancybox-slide--current .animated-modal h2,
@@ -69,7 +135,6 @@ ol{
   opacity: 1;
 }
 
-/* Reveal content with different delays */
 .fancybox-slide--current .animated-modal h2 {
   transition-delay: .1s;
 }
@@ -107,6 +172,10 @@ ol{
   border: 1px solid #ED7600;
   margin-bottom: 20px;
 }
+.container{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .aboutMattress{
   height: 12em;
 }
@@ -115,6 +184,9 @@ ol{
 }
 .orangeText span{
   color: #ED7600;
+}
+.orangeText li{
+	font-family: 'RobotoRegular', sans-serif;
 }
 .floatLeft{
   float: left;
@@ -143,14 +215,18 @@ ol{
 .bgLight button{
 	color: #111;
 }
+.bgBrown{
+  background-color: rgba(237, 118, 0, 0.15);
+  border-radius: 50px;
+}
 .orangeBtn{
   border: 1px solid  #ED7600;
   border-radius: 20px;
   background-color: #ED7600;
 }
 .catalogBtn{
-  min-height: 52px;
-  min-width: 219px;
+  height: 57px;
+  width: 241px;
  /* max-height: 61px;
   max-width: 255px;*/
 }
@@ -161,12 +237,19 @@ ol{
   min-width: 176px;
   margin-bottom: 25px;
 }
+.personalInformation{
+  font-family: "RobotoCondesedBold", sans-serif;
+  font-weight: bold; 
+}
+.personalInformation a{
+  color: #828282;
+}
 .orderMattressBtn{
   min-height: 46px;
   min-width: 246px;
   color: #000;
 }
-.callBtn{
+.longBtn{
   width: 100%;
   height: 40px;
 }
@@ -174,6 +257,12 @@ ol{
   background: transparent;
   width: 140px;
   height: 35px;
+}
+.headerBtn{
+  color: #ED7600 !important	;
+}
+.firstRow{
+  padding-top: 10px;
 }
 .nav-item button{
   color: #ED7600;
@@ -213,13 +302,13 @@ ol{
   margin: auto;
 }
 .card-body ol{
-	padding-left: 20px;
+  padding-left: 20px;
 }
 .advantagesSlider img{
-	margin: auto;
+  margin: auto;
 }
 .advantagesSlider p{
-	text-align: center;
+  text-align: center;
 }
 .workTime{
 	margin: 0;
@@ -229,8 +318,60 @@ ol{
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
+  font-family: "RobotoCondesedBold", sans-serif;
+  font-weight: bold;
+}
+#navbarNav{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  /*display: none;*/
+}
+#headerContent{
+  display: block;
+  transition: all 1s;
 }
 #selectCity{
-	background: #ED7600;
-	color: #111;
+  background: #ED7600;
+  color: #111;
+}
+#toTop {
+width:100px;
+padding:5px;
+position:fixed;
+bottom:10px;
+right:10px;
+cursor:pointer;
+display:none;
+}
+
+
+.left-menu, .right-menu {
+  justify-content: space-around;
+  width: 100%;
+  background: rgba(237, 118, 0, 0.15);
+  display: flex;
+  line-height: 50px; /*под высоту картинки в центре*/
+  border-radius: 25px;
+}
+.center-menu{
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+  line-height: 50px; /*под высоту картинки в центре*/
+  border-radius: 25px;
+}
+.item {
+  min-width: 100px;
+  text-align: center;
+}
+.item:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.center-menu img {
+  width: 100%;
+  height: 50px;
 }
