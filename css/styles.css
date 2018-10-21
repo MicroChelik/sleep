@@ -2,9 +2,9 @@
 
 font-family: 'RobotoRegular';
 
-src: url('../fonts/Roboto-Regular-webfont.woff');
+src: url('../css/fonts/Roboto-Regular-webfont.woff');
 
-src: url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+src: url('../css/fonts/Roboto-Regular-webfont.woff') format('woff');
 
 font-weight: normal;
 
@@ -16,9 +16,9 @@ font-style: normal;
 
 font-family: 'RobotoCondesedRegular';
 
-src: url('../fonts/RobotoCondensed-Regular-webfont.woff');
+src: url('../css/fonts/RobotoCondensed-Regular-webfont.woff');
 
-src: url('../fonts/RobotoCondensed-Regular-webfont.woff') format('woff');
+src: url('../css/fonts/RobotoCondensed-Regular-webfont.woff') format('woff');
 
 font-weight: normal;
 
@@ -31,9 +31,9 @@ font-style: normal;
 
 font-family: 'RobotoCondesedBold';
 
-src: url('../fonts/RobotoCondensed-Bold-webfont.woff');
+src: url('../css/fonts/RobotoCondensed-Bold-webfont.woff');
 
-src: url('../fonts/RobotoCondensed-Bold-webfont.woff') format('woff');
+src: url('../css/fonts/RobotoCondensed-Bold-webfont.woff') format('woff');
 
 font-weight: bold;
 
@@ -53,6 +53,9 @@ font-style: normal;
   	line-height: 18px;
   	padding-left: 10px;
   }
+  .advantagesSlider div{
+    margin-bottom: 30px;
+  }
 
   h1{
   	margin-top: 200px;
@@ -61,9 +64,42 @@ font-style: normal;
   .map ymaps{
   border-radius: 25px;
   }
+
   .advantagesSlider div{
   	display: flex;
   }
+
+  .icons{
+  margin-bottom: 20px;
+  }
+  .cardIcons div{
+  padding: 0;
+  }
+
+}
+@media (max-width: 992px){
+  .icons div:first-child{
+  margin-bottom: 18px;
+  }
+  .icons{
+    margin-top: 18px;
+  }
+  .footer{
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+  .advantagesSlider p{
+    text-align: left !important;
+    margin: auto;
+    line-height: 18px;
+  }
+  .advantagesSlider div{
+    margin-bottom: 20px;
+  }
+  .cardIcons div{
+  padding: 0;
+  }  
 }
 body{
   font-family: 'RobotoCondesedRegular', sans-serif; 
@@ -153,6 +189,12 @@ a{
   position: relative;
   top: -130px;
 }
+.orangeBackground{
+  height: 55px;
+  width: 55px;
+  background-color: #ED7600;
+  border-radius: 100%
+}
 .orangeMark li{
   color: #ED7600;
 }
@@ -173,7 +215,6 @@ a{
   margin-bottom: 20px;
 }
 .container{
-  padding-top: 40px;
   padding-bottom: 40px;
 }
 .aboutMattress{
@@ -197,6 +238,10 @@ a{
 }
 .footer p{
 	margin: 0 !important;
+}
+.footer{
+  font-size: 14px;
+  line-height: 20px;
 }
 .price{
 	height: 4em;
@@ -223,12 +268,21 @@ a{
   border: 1px solid  #ED7600;
   border-radius: 20px;
   background-color: #ED7600;
+  color: #fff;
+  cursor: pointer;
 }
 .catalogBtn{
   height: 57px;
   width: 241px;
  /* max-height: 61px;
   max-width: 255px;*/
+}
+.footer{
+  line-height: 20px;
+  font-size: 14px;
+}
+.callMeForm button{
+  color: #fff;
 }
 .partnerBtn{
   background: transparent;
@@ -263,6 +317,8 @@ a{
 }
 .firstRow{
   padding-top: 10px;
+  font-size: 12px;    
+  line-height: 17px;
 }
 .nav-item button{
   color: #ED7600;
@@ -346,8 +402,9 @@ right:10px;
 cursor:pointer;
 display:none;
 }
-
-
+.menu{
+  margin-top: 40px;
+}
 .left-menu, .right-menu {
   justify-content: space-around;
   width: 100%;
