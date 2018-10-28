@@ -44,7 +44,27 @@ $(document).ready(function() {
 			$('#headerContent').css("transition", 'all .9s ease');
 		}
 	});
+	
+	$('.select__list').click(function(){
+		$(this).find('.select__option').slideToggle(300);
+ 	});
+	$('.select__item--option').click(function(){
 
+		$(this).siblings().removeClass('active');
+		$(this).addClass('active');
+
+ 		var selectedProductPrice = $(this).find('.select__value--option span').text(),
+		selectedProductParam = $(this).find('.select__param--option').text();
+ 		productPrice = $(this).closest('.select__list').find('.selected span').text(selectedProductPrice),
+ 		selectedPrice = $(this).closest('.select__list').find('#price').text(),
+		price = parseInt(selectedPrice.replace(/\D+/g,""));
+
+		console.log(price);
+
+ 		$(this).closest('.select__list').find('.selected .select__param').text(selectedProductParam);
+ 		console.log($(this).closest('.cart-product__value').find('.cart-product__price span:first'));	
+		$(this).closest('.row').find('.cart-product__price span:first').text(price.toLocaleString('ru'));
+ 	});
  
 
 });

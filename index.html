@@ -35,12 +35,12 @@
 						<div class="row justify-content-center">
 							<h2>ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h2>
 							<div class="col-12 form-group">
-								<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
+								<input type="text" class="form-control" id="" placeholder="Ваше имя *">
 							</div>
 							<div class="col-12 form-group">
-								<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
+								<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
 							</div>
-							<div class="col-6 form-group">
+							<div class="col-10 col-md-6 form-group">
 								<button type="submit" class="orangeBtn longBtn" id="">Заказать звонок</button>
 							</div>
 							<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
@@ -51,9 +51,9 @@
 			<div class="row menu d-none d-lg-flex">
 		 	    <div class="col-lg-5">
 		 	      	<div class="left-menu">
-		 	        	<div class="item"><a href="#aboutOctaspring">Что такое OCTASPRING ?</a></div>
-		 	        	<div class="item"><a href="#advantages">Преимущества</a></div>
-		 	        	<div class="item"><a href="#products">Продукция</a></div>
+		 	        	<a href="#aboutOctaspring"><div class="item">Что такое OCTASPRING ?</div></a>
+		 	        	<a href="#advantages"><div class="item">Преимущества</div></a>
+		 	        	<a href="#products"><div class="item">Продукция</div></a>
 		 	    	</div>
 		 	    </div>
 		 	    <div class="col-lg-2">
@@ -63,9 +63,9 @@
 		 	    </div>
 		 	    <div class="col-lg-5">
 		 	      	<div class="right-menu">
-		 	        	<div class="item"><a href="#certification">Сертификация</a></div>
-		 	        	<div class="item"><a href="#help">Помощь</a></div>
-		 	        	<div class="item"><a href="#contacts">Контакты</a></div>
+		 	        	<a href="#certification"><div class="item">Сертификация</div></a>
+		 	        	<a href="#help"><div class="item">Помощь</div></a>
+		 	        	<a href="#contacts"><div class="item">Контакты</div></a>
 		 	      	</div>
 		 	    </div>
 		 	  </div>
@@ -77,7 +77,7 @@
 					</a>
 				</div>
 				<button class="navbar-toggler d-lg-none d-inline-block" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	   				 <span class="navbar-toggler-icon" id="toggle"><img src="img/Group.png"></span>
+	   				 <span class="navbar-toggler-icon" id="toggle"><img src="img/icons/Group.png"></span>
 	  			</button>
 	 			<div class="collapse navbar-collapse" id="navbarNav">
 	 				<ul class="navbar-nav">
@@ -85,25 +85,27 @@
 	 						<a class="nav-link" href="#"><img src="img/logos/logo_header.png"> НАШ ОСНОВНОЙ САЙТ <p>РУСОН.РФ</p><span class="sr-only">(current)</span></a>
 	 					</li>
 	 					<li class="nav-item">
-	 						<a class="nav-link" href="#">Что такое OCTASPRING?</a>
+	 						<a class="nav-link" href="#aboutOctaspring">Что такое OCTASPRING?</a>
 	 					</li>
 	 					<li class="nav-item">
-	 						<a class="nav-link" href="#"><p>Преимущества</p></a>
+	 						<a class="nav-link" href="#advantages"><p>Преимущества</p></a>
 	 					</li>
 	 					<li class="nav-item">
-	 						<a class="nav-link" href="#"><p>Продукция</p></a>
+	 						<a class="nav-link" href="#products"><p>Продукция</p></a>
 	 					</li>
 	 					<li class="nav-item">
-	 						<a class="nav-link" href="#"><p>Сертификация</p></a>
+	 						<a class="nav-link" href="#certification"><p>Сертификация</p></a>
 	 					</li>
 	 					<li class="nav-item">
-	 						<a class="nav-link" href="#"><p>Помощь</p></a>
+	 						<a class="nav-link" href="#help"><p>Помощь</p></a>
 	 					</li>
 	 					<li class="nav-item">
-	 						<a class="nav-link" href="#"><p>Контакты</p></a>
+	 						<a class="nav-link" href="#contacts"><p>Контакты</p></a>
 	 					</li>
 	 					<li class="nav-item">
-	 						<button class="orangeBtn orderCallBtn">Заказать звонок</button>
+	 						<a data-fancybox data-animation-duration="700" data-src="#orderCallModal" href="javascript:;">
+	 							<button class="orangeBtn orderCallBtn">Заказать звонок</button>
+	 						</a>
 	 					</li>
 	 					<li class="nav-item">
 	 						<a class="nav-link" href="#">RUSIN.IZH@YANDEX.RU</a>
@@ -123,7 +125,7 @@
 				<div class="col-12 col-lg-8 ml-lg-auto">
  					<h1 class="oo">Революционная концепция долговечности и комфорта.</h1>
  					<p class="oo">Фабрика «РуСон» является единственным официальным представителем  OCTASPRING в Удмуртской республике.</p>	
- 					<button class="orangeBtn catalogBtn">КАТАЛОГ ПРОДУКЦИИ</button>
+ 					<a href="#products"><button class="orangeBtn catalogBtn">КАТАЛОГ ПРОДУКЦИИ</button></a>
  				</div>
  			</div>
 		</div>
@@ -266,7 +268,7 @@
 					<h2>Выбери свою модель</h2>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row mattressSliderArrows">
 				<div class="col-auto ml-auto d-block d-lg-none">
 					<img src="img/icons/left.png" class="prev">
 				</div>
@@ -329,7 +331,7 @@
 								</ol>
 							</div>
 							<div class="price">
-								<span>от 3 500 руб.</span>
+								<span>от 10 550 руб.</span>
 							</div>
 							<a data-fancybox data-animation-duration="700" data-src="#cottonModal" href="javascript:;">
 							<button class="orangeBtn orderMattressBtn">Заказать</button>
@@ -391,40 +393,71 @@
 										</p>
 										<p>Матрас COTTON подарит Вам здоровый сон и заряд бодрости утром.</p>	
 									</div>
-									<div class="col-12">
-										<form>
-											<div class="row justify-content-center">
-												<form>
-												 	<div class="col-12 col-lg-6 form-group">
-												    	<span>Выберите размер:</span>
-														<select class="form-control" id="">
-															<option><span>20 х 120 см</span><span>9300 руб</span></option>
-			      											<option>2<span></span><span></span></option>
-			      											<option>3<span></span><span></span></option>
-			      											<option>4<span></span><span></span></option>
-			      											<option>5<span></span><span></span></option>
-														</select>
-												    </div>
-												 	 <div class="col-12 col-lg-6">
-												    	<span>Здесь цены выбранного матраса</span>
-												  	</div>
-												  	<div class="col-12 form-group">
-									    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
-									   				</div>
-									   				<div class="col-12 form-group">
-									    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
-									   				</div>
-									   				<div class="col-12 form-group">
-									    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
-									   				</div>
-									   				<div class="col-6">			
-									   					<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
-									   				</div>
-									   				<p Узнать больше>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
-									   			</form>
+									<div class="row justify-content-center">							
+										<div class="col-12 noPaddingRIght">
+											<div class="cart-product__selection">
+												<div class="row w-100">
+													<div class="cart-product__select col-md-6 col-12">
+														<span class="cart-product__select_title">Выберите размер:</span>
+														<ul class="select__list">
+															<li class="select__item selected">
+																<div class="select__param">80 x 190/200 см</div>
+																<div id="price" class="select__value"><span>10 550</span> руб.</div>
+															</li>
+															<ul class="select__option" style="display: none;">
+																<li class="select__item select__item--option active">
+																	<div class="select__param select__param--option">80 x 190/200 см</div>
+																	<div class="select__value select__value--option"><span>10 550</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">90 x 190/200 см</div>
+																	<div class="select__value select__value--option"><span>11 800</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">120 x 200 см</div>
+																	<div class="select__value select__value--option"><span>15 300</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">140 x 200 см</div>
+																	<div class="select__value select__value--option"><span>17 700</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">160 x 200 см</div>
+																	<div class="select__value select__value--option"><span>20 200</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">180 x 200 см</div>
+																	<div class="select__value select__value--option"><span>22 700</span> руб.</div>
+																</li>
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">200 x 200 см</div>
+																	<div class="select__value select__value--option"><span>25 350</span> руб.</div>
+																</li>
+															</ul>
+														</ul>
+													</div>
+													<div class="cart-product__value col-md-6 col-12">
+														<div class="cart-product__price">Цена:<br><span>10 500</span><span class="rub"> руб.</span></div>
+													</div>
+												</div>
 											</div>
-										</form>
-									</div>
+										</div>
+										<form>
+										  	<div class="col-12 form-group">
+									    			<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+									   		</div>
+									   		<div class="col-12 form-group">
+									   			<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+											</div>
+									   		<div class="col-12 form-group">
+									    		<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									   		</div>
+									   		<div class="col-6 m-auto">			
+									   			<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   		</div>
+									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="">Узнать больше</a></p>		
+									   	</form>
+									</div>									
 								</div>
 							</div>
 						</div>
@@ -483,7 +516,7 @@
 								</ol>
 							</div>
 							<div class="price">
-								<span>от 3 500 руб.</span>
+								<span>от 12 800 руб.</span>
 							</div>
 							<a data-fancybox data-animation-duration="700" data-src="#velvetModal" href="javascript:;">
 								<button class="orangeBtn orderMattressBtn">Заказать</button>
@@ -545,39 +578,70 @@
 										</p>
 										<p>Все слои матраса изготовлены из пены высокой плотности, это гарантирует комфорт и долговечность.</p>
 									</div>
-									<div class="col-12">
-										<form>
-											<div class="row justify-content-center">
-												<form>
-												 	<div class="col-12 col-lg-6 form-group">
-												    	<span>Выберите размер:</span>
-														<select class="form-control" id="">
-															<option><span>20 х 120 см</span><span>9300 руб</span></option>
-			      											<option>2<span></span><span></span></option>
-			      											<option>3<span></span><span></span></option>
-			      											<option>4<span></span><span></span></option>
-			      											<option>5<span></span><span></span></option>
-														</select>
-												    </div>
-												 	 <div class="col-12 col-lg-6">
-												    	<span>Здесь цены выбранного матраса</span>
-												  	</div>
-												  	<div class="col-12 form-group">
-									    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
-									   				</div>
-									   				<div class="col-12 form-group">
-									    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
-									   				</div>
-									   				<div class="col-12 form-group">
-									    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
-									   				</div>
-									   				<div class="col-6">	
-									   					<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
-									   				</div>
-									   				<p Узнать больше>Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
-									   			</form>
+									<div class="row justify-content-center">							
+										<div class="col-12 noPaddingRIght">
+											<div class="cart-product__selection">
+												<div class="row w-100">
+													<div class="cart-product__select col-md-6 col-12">
+														<span class="cart-product__select_title">Выберите размер:</span>
+														<ul class="select__list">
+															<li class="select__item selected">
+																<div class="select__param">80 x 190/200 см</div>
+																<div id="price" class="select__value"><span>12 800</span> руб.</div>
+															</li>
+															<ul class="select__option" style="display: none;">
+																<li class="select__item select__item--option active">
+																	<div class="select__param select__param--option">80 x 190/200 см</div>
+																	<div class="select__value select__value--option"><span>12 800</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">90 x 190/200 см</div>
+																	<div class="select__value select__value--option"><span>13 950</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">120 x 200 см</div>
+																	<div class="select__value select__value--option"><span>18 500</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">140 x 200 см</div>
+																	<div class="select__value select__value--option"><span>20 950</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">160 x 200 см</div>
+																	<div class="select__value select__value--option"><span>25 500</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">180 x 200 см</div>
+																	<div class="select__value select__value--option"><span>28 900</span> руб.</div>
+																</li>
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">200 x 200 см</div>
+																	<div class="select__value select__value--option"><span>32 500</span> руб.</div>
+																</li>
+															</ul>
+														</ul>
+													</div>
+													<div class="cart-product__value col-md-6 col-12">
+														<div class="cart-product__price">Цена:<br><span>12 800</span><span class="rub"> руб.</span></div>
+													</div>
+												</div>
 											</div>
-										</form>
+										</div>
+										<form>
+										  	<div class="col-12 form-group">
+									    			<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+									   		</div>
+									   		<div class="col-12 form-group">
+									   			<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+											</div>
+									   		<div class="col-12 form-group">
+									    		<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									   		</div>
+									   		<div class="col-6 m-auto">			
+									   			<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   		</div>
+									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="">Узнать больше</a></p>		
+									   	</form>
 									</div>
 								</div>
 							</div>
@@ -638,7 +702,7 @@
 								</ol>
 							</div>
 							<div class="price">
-								<span>от 3 500 руб.</span>
+								<span>от 14 900 руб.</span>
 							</div>
 							<a data-fancybox data-animation-duration="700" data-src="#tweedModal" href="javascript:;">
 								<button class="orangeBtn orderMattressBtn">Заказать</button>
@@ -700,39 +764,70 @@
 										<p>Ядро матраса выполнено в инновационной форме волны, поэтому поверхность имеет разные степени жесткости с плавным переходом в области поясницы от более жесткой (рекомендуем для области спины) к более мягкой для области ног и головы.</p>
 										<p>Все слои матраса изготовлены из пены высокой плотности, это гарантирует комфорт и долговечность.</p>
 									</div>
-									<div class="col-12">
-										<form>
-											<div class="row justify-content-center">
-												<form>
-												 	<div class="col-12 col-lg-6 form-group">
-												    	<span>Выберите размер:</span>
-														<select class="form-control" id="">
-															<option><span>20 х 120 см</span><span>9300 руб</span></option>
-			      											<option>2<span></span><span></span></option>
-			      											<option>3<span></span><span></span></option>
-			      											<option>4<span></span><span></span></option>
-			      											<option>5<span></span><span></span></option>
-														</select>
-												    </div>
-												 	 <div class="col-12 col-lg-6">
-												    	<span>Здесь цены выбранного матраса</span>
-												  	</div>
-												  	<div class="col-12 form-group">
-									    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
-									   				</div>
-									   				<div class="col-12 form-group">
-									    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
-									   				</div>
-									   				<div class="col-12 form-group">
-									    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
-									   				</div>
-									   				 <div class="col-6">
-									   					<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
-									   				</div>
-									   				<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
-									   			</form>
+									<div class="row justify-content-center">							
+										<div class="col-12 noPaddingRIght">
+											<div class="cart-product__selection">
+												<div class="row w-100">
+													<div class="cart-product__select col-md-6 col-12">
+														<span class="cart-product__select_title">Выберите размер:</span>
+														<ul class="select__list">
+															<li class="select__item selected">
+																<div class="select__param">80 x 190/200 см</div>
+																<div id="price" class="select__value"><span>14 900</span> руб.</div>
+															</li>
+															<ul class="select__option" style="display: none;">
+																<li class="select__item select__item--option active">
+																	<div class="select__param select__param--option">80 x 190/200 см</div>
+																	<div class="select__value select__value--option"><span>14 900</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">90 x 190/200 см</div>
+																	<div class="select__value select__value--option"><span>16 500</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">120 x 200 см</div>
+																	<div class="select__value select__value--option"><span>22 900</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">140 x 200 см</div>
+																	<div class="select__value select__value--option"><span>25 450</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">160 x 200 см</div>
+																	<div class="select__value select__value--option"><span>29 950</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">180 x 200 см</div>
+																	<div class="select__value select__value--option"><span>35 500</span> руб.</div>
+																</li>
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">200 x 200 см</div>
+																	<div class="select__value select__value--option"><span>39 750</span> руб.</div>
+																</li>
+															</ul>
+														</ul>
+													</div>
+													<div class="cart-product__value col-md-6 col-12">
+														<div class="cart-product__price">Цена:<br><span>14 900</span><span class="rub"> руб.</span></div>
+													</div>
+												</div>
 											</div>
-										</form>
+										</div>
+										<form>
+										  	<div class="col-12 form-group">
+									    			<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+									   		</div>
+									   		<div class="col-12 form-group">
+									   			<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+											</div>
+									   		<div class="col-12 form-group">
+									    		<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									   		</div>
+									   		<div class="col-6 m-auto">			
+									   			<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   		</div>
+									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="">Узнать больше</a></p>		
+									   	</form>
 									</div>
 								</div>
 							</div>
@@ -793,7 +888,7 @@
 								</ol>
 							</div>
 							<div class="price">
-								<span>от 3 500 руб.</span>
+								<span>от 11 900 руб.</span>
 							</div>
 							<a data-fancybox data-animation-duration="700" data-src="#satinModal" href="javascript:;">
 								<button class="orangeBtn orderMattressBtn">Заказать</button>
@@ -853,39 +948,70 @@
 									<div class="col-12">
 										<p>Пенный двусторонний матрас рекомендуем людям среднего и пожилого возраста. Отличительной особенностью матраса является то, что его ядро полностью состоит из Oktaspring высотой 10 см, это усиливает вентиляцию матраса и позволяет максимально ощутить мягкую динамичность пенной пружины и ее индивидуальную работу. Разница в жесткости достигается за счет настила с разных сторон пены с эффектом памяти Memory Foam и пены Sky Cell. Верхний слой матраса оказывает мгновенный расслабляющий эффект за счет пены с эффектом памяти. Сон на матрасе Satin, позволяет увеличить фазу глубокого сна и значительно снизить эффект нежелательного пробуждения, благодаря чему Вы полностью восстанавливаетесь!</p>
 									</div>
-									<div class="col-12">
-										<form>
-											<div class="row justify-content-center">
-												<form>
-												 	<div class="col-12 col-lg-6 form-group">
-												    	<span>Выберите размер:</span>
-														<select class="form-control" id="">
-															<option><span>20 х 120 см</span><span>9300 руб</span></option>
-			      											<option>2<span></span><span></span></option>
-			      											<option>3<span></span><span></span></option>
-			      											<option>4<span></span><span></span></option>
-			      											<option>5<span></span><span></span></option>
-														</select>
-												    </div>
-												 	 <div class="col-12 col-lg-6">
-												    	<span>Здесь цены выбранного матраса</span>
-												  	</div>
-												  	<div class="col-12 form-group">
-									    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
-									   				</div>
-									   				<div class="col-12 form-group">
-									    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
-									   				</div>
-									   				<div class="col-12 form-group">
-									    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
-									   				</div>
-									   				<div class="col-6">
-									   					<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
-									   				</div>
-									   				<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
-									   			</form>
+									<div class="row justify-content-center">							
+										<div class="col-12 noPaddingRIght">
+											<div class="cart-product__selection">
+												<div class="row w-100">
+													<div class="cart-product__select col-md-6 col-12">
+														<span class="cart-product__select_title">Выберите размер:</span>
+														<ul class="select__list">
+															<li class="select__item selected">
+																<div class="select__param">80 x 190/200 см</div>
+																<div id="price" class="select__value"><span>11 900</span> руб.</div>
+															</li>
+															<ul class="select__option" style="display: none;">
+																<li class="select__item select__item--option active">
+																	<div class="select__param select__param--option">80 x 190/200 см</div>
+																	<div class="select__value select__value--option"><span>11 900</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">90 x 190/200 см</div>
+																	<div class="select__value select__value--option"><span>13 400</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">120 x 200 см</div>
+																	<div class="select__value select__value--option"><span>17 500</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">140 x 200 см</div>
+																	<div class="select__value select__value--option"><span>20 300</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">160 x 200 см</div>
+																	<div class="select__value select__value--option"><span>23 150</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">180 x 200 см</div>
+																	<div class="select__value select__value--option"><span>27 900</span> руб.</div>
+																</li>
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">200 x 200 см</div>
+																	<div class="select__value select__value--option"><span>30 650</span> руб.</div>
+																</li>
+															</ul>
+														</ul>
+													</div>
+													<div class="cart-product__value col-md-6 col-12">
+														<div class="cart-product__price">Цена:<br><span>11 900</span><span class="rub"> руб.</span></div>
+													</div>
+												</div>
 											</div>
-										</form>
+										</div>
+										<form>
+										  	<div class="col-12 form-group">
+									    			<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+									   		</div>
+									   		<div class="col-12 form-group">
+									   			<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+											</div>
+									   		<div class="col-12 form-group">
+									    		<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									   		</div>
+									   		<div class="col-6 m-auto">			
+									   			<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   		</div>
+									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="">Узнать больше</a></p>		
+									   	</form>
 									</div>
 								</div>
 							</div>
@@ -947,7 +1073,7 @@
 								</ol>
 							</div>
 							<div class="price">
-								<span>от 3 500 руб.</span>
+								<span>от 15 950 руб.</span>
 							</div>
 							<a data-fancybox data-animation-duration="700" data-src="#flannelModal" href="javascript:;">
 								<button class="orangeBtn orderMattressBtn">Заказать</button>
@@ -1011,39 +1137,70 @@
 										<p>Матрас оказывает динамическую поддержку всю ночь. Пока вы спите, сотни пружинок Octaspring, расположенных в верхнем слое, дают мягкий массаж, снимают стресс, напряжение с мышц и суставов, способствуют быстрому засыпанию и восстановлению.</p>
 										<p>На матрасе FLANNEL вы можете спать меньше и при этом лучше высыпаться. Вы отдыхаете, пока матрас работает.</p>
 									</div>
-									<div class="col-12">
-										<form>
-											<div class="row justify-content-center">
-												<form>
-												 	<div class="col-12 col-lg-6 form-group">
-												    	<span>Выберите размер:</span>
-														<select class="form-control" id="">
-															<option><span>20 х 120 см</span><span>9300 руб</span></option>
-			      											<option>2<span></span><span></span></option>
-			      											<option>3<span></span><span></span></option>
-			      											<option>4<span></span><span></span></option>
-			      											<option>5<span></span><span></span></option>
-														</select>
-												    </div>
-												 	 <div class="col-12 col-lg-6">
-												    	<span>Здесь цены выбранного матраса</span>
-												  	</div>
-												  	<div class="col-12 form-group">
-									    					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
-									   				</div>
-									   				<div class="col-12 form-group">
-									    					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
-									   				</div>
-									   				<div class="col-12 form-group">
-									    					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
-									   				</div>
-									   				<div class="col-6">
-									   					<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
-									   				</div>
-									   				<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
-									   			</form>
+									<div class="row justify-content-center">							
+										<div class="col-12 noPaddingRIght">
+											<div class="cart-product__selection">
+												<div class="row w-100">
+													<div class="cart-product__select col-md-6 col-12">
+														<span class="cart-product__select_title">Выберите размер:</span>
+														<ul class="select__list">
+															<li class="select__item selected">
+																<div class="select__param">80 x 190/200 см</div>
+																<div id="price" class="select__value"><span>15 950</span> руб.</div>
+															</li>
+															<ul class="select__option" style="display: none;">
+																<li class="select__item select__item--option active">
+																	<div class="select__param select__param--option">80 x 190/200 см</div>
+																	<div class="select__value select__value--option"><span>15 950</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">90 x 190/200 см</div>
+																	<div class="select__value select__value--option"><span>18 800</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">120 x 200 см</div>
+																	<div class="select__value select__value--option"><span>24 500</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">140 x 200 см</div>
+																	<div class="select__value select__value--option"><span>29 850</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">160 x 200 см</div>
+																	<div class="select__value select__value--option"><span>33 900</span> руб.</div>
+																</li>							
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">180 x 200 см</div>
+																	<div class="select__value select__value--option"><span>39 950</span> руб.</div>
+																</li>
+																<li class="select__item select__item--option ">
+																	<div class="select__param select__param--option">200 x 200 см</div>
+																	<div class="select__value select__value--option"><span>45 500</span> руб.</div>
+																</li>
+															</ul>
+														</ul>
+													</div>
+													<div class="cart-product__value col-md-6 col-12">
+														<div class="cart-product__price">Цена:<br><span>15 950</span><span class="rub"> руб.</span></div>
+													</div>
+												</div>
 											</div>
-										</form>
+										</div>
+										<form>
+										  	<div class="col-12 form-group">
+									    			<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+									   		</div>
+									   		<div class="col-12 form-group">
+									   			<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+											</div>
+									   		<div class="col-12 form-group">
+									    		<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									   		</div>
+									   		<div class="col-6 m-auto">			
+									   			<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   		</div>
+									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="">Узнать больше</a></p>		
+									   	</form>
 									</div>
 								</div>
 							</div>
@@ -1102,10 +1259,10 @@
 				</div>
 				<form class="form-row justify-content-center callMeForm">
 					<div class="form-group col-md-4">
-     					<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
+     					<input type="text" class="form-control" id="" placeholder="Ваше имя *">
     				</div>
     				<div class="form-group col-md-4">
-     					<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
+     					<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
     				</div>
     				<div class="form-group col-md-4">
      					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
@@ -1168,10 +1325,10 @@
 						<div class="row justify-content-center">
 							<h2>СТАТЬ НАШИМ ПАРТНЕРОМ</h2>
 							<div class="col-12 form-group">
-								<input type="text" class="form-control" id="name" placeholder="Ваше имя *">
+								<input type="text" class="form-control" id="" placeholder="Ваше имя *">
 							</div>
 							<div class="col-12 form-group">
-								<input type="" class="form-control" id="phoneNumber" placeholder="Контактный номер телефона *">
+								<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
 							</div>
 							<div class="col-12 form-group">
 								<input type="email" class="form-control" id="email" placeholder="Ваше email *">

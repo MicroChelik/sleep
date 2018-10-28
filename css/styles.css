@@ -41,66 +41,7 @@ font-style: normal;
 
 }
 
-@media (min-width: 992px){
-  .aboutOctaspring{
-  background-image: url(../img/background/group.png);
-  height: 600px;
-  }
 
-  .advantagesSlider p{
-  	text-align: left !important;
-  	margin: auto;
-  	line-height: 18px;
-  	padding-left: 10px;
-  }
-  .advantagesSlider div{
-    margin-bottom: 30px;
-  }
-
-  h1{
-  	margin-top: 200px;
-  }
-
-  .map ymaps{
-  border-radius: 25px;
-  }
-
-  .advantagesSlider div{
-  	display: flex;
-  }
-
-  .icons{
-  margin-bottom: 20px;
-  }
-  .cardIcons div{
-  padding: 0;
-  }
-
-}
-@media (max-width: 992px){
-  .icons div:first-child{
-  margin-bottom: 18px;
-  }
-  .icons{
-    margin-top: 18px;
-  }
-  .footer{
-    margin-top: 30px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px){
-  .advantagesSlider p{
-    text-align: left !important;
-    margin: auto;
-    line-height: 18px;
-  }
-  .advantagesSlider div{
-    margin-bottom: 20px;
-  }
-  .cardIcons div{
-  padding: 0;
-  }  
-}
 body{
   font-family: 'RobotoCondesedRegular', sans-serif; 
 }
@@ -117,19 +58,13 @@ h2,h1{
  font-weight: bold;
 }
 a{
-  color: #fff;
+  color: #fff !important;
 }
-.a{
-  width: 465px;
-  height: 46px;
+a:hover {
+  text-decoration: underline;
 }
-.b{
-  width: 222px;
-  height: 46px;
-}
-.c{
- width: 453px;
- height: 46px;
+.card-body a:hover {
+  text-decoration: none;
 }
 .animated-modal {
   max-width: 800px;
@@ -189,6 +124,9 @@ a{
   position: relative;
   top: -130px;
 }
+.mattressSliderArrows{
+  margin-bottom: 5px;
+}
 .orangeBackground{
   height: 55px;
   width: 55px;
@@ -246,6 +184,11 @@ a{
 .price{
 	height: 4em;
 }
+.price span{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 700;
+}
 .bgDark{
   background-color: #111;
   color: #fff;
@@ -274,8 +217,6 @@ a{
 .catalogBtn{
   height: 57px;
   width: 241px;
- /* max-height: 61px;
-  max-width: 255px;*/
 }
 .footer{
   line-height: 20px;
@@ -296,9 +237,11 @@ a{
   font-weight: bold; 
 }
 .personalInformation a{
-  color: #828282;
+  color: #828282 !important;
 }
 .orderMattressBtn{
+  display: block;
+  margin: auto;
   min-height: 46px;
   min-width: 246px;
   color: #000;
@@ -369,11 +312,184 @@ a{
 .workTime{
 	margin: 0;
 }
+.menu{
+  margin-top: 40px;
+}
+.left-menu, .right-menu {
+  justify-content: space-around;
+  width: 100%;
+  background: rgba(237, 118, 0, 0.15);
+  display: flex;
+  line-height: 50px;
+  border-radius: 25px;
+}
+.center-menu{
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+  line-height: 50px;
+  border-radius: 25px;
+}
+.item {
+  min-width: 100px;
+  text-align: center;
+}
+.item:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.center-menu img {
+  width: 100%;
+  height: 50px;
+}
+
+.noPaddingRIght{
+  padding-right: 0;
+}
+
+.cart-product__selection {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cart-product__select {
+    width: 60%;
+    /*margin-right: 5%;*/
+}
+.cart-product__select_title {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
+}
+.select__list:last-child {
+    margin-bottom: 0;
+}
+.select__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    position: relative;
+}
+li, ul {
+    margin: 0;
+    padding: 0;
+}
+.select__item {
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+}
+.select__param {
+    width: 50%;
+    background-color: #ED7600;
+    padding: 8px 15px;
+    -webkit-border-radius: 10em 0 0 10em;
+    border-radius: 10em 0 0 10em;
+    position: relative;
+    font-size: 16px;
+    color: #000;
+}
+.select__param:after {
+    content: '';
+    position: absolute;
+    border: 21px solid transparent;
+    border-right: 19px solid #ED7600;
+    right: -17px;
+    border-radius: 10em;
+    z-index: 2;
+    display: block;
+    top: 0px;
+}
+.select__param--option:after {
+    display: none;
+}
+.select__item--option {
+    border: 1px solid #e8e8e8;
+    border-bottom: 0;
+    -webkit-transition: ease .2s;
+    -o-transition: ease .2s;
+    transition: ease .2s;
+    background-color: #fff;
+}
+.select__param--option {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: transparent;
+    color: #333;
+} 
+.select__value--option {
+    -webkit-border-radius: 0;
+    border-radius: 0 !important;
+    border: 0 !important;
+    background-color: transparent;
+}
+.select__value span {
+    font-weight: 700;
+}
+.select__value:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background-image: url(../img/icons/dropdown.png);
+    background-repeat: no-repeat;
+    top: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    right: 15px;
+}
+.select__value--option:after {
+    display: none;
+}
+.select__value {
+    width: 50%;
+    padding: 8px 20px;
+    font-size: 16px;
+    -webkit-border-radius: 0 10em 10em 0;
+    border-radius: 0 10em 10em 0;
+    border: 1px solid #e8e8e8;
+    border-left: 0;
+    position: relative;
+}
+.select__option {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 48px;
+    z-index: 3;
+    width: 100%;
+}
+.cart-product__value {
+    width: 35%;
+}
+.cart-product__price {
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 700;
+}
+.cart-product__price span{
+    margin-bottom: 30px;
+    color: #ED7600;
+    font-size: 36px;
+    font-weight: 700;
+}
+
 #header{
   background-image: url('../img/background/background.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  background-position: center;
+  width: 100%;
+  height: 890px;
   font-family: "RobotoCondesedBold", sans-serif;
   font-weight: bold;
 }
@@ -383,7 +499,6 @@ a{
   left: 0;
   width: 100%;
   z-index: 10;
-  /*display: none;*/
 }
 #headerContent{
   display: block;
@@ -402,33 +517,67 @@ right:10px;
 cursor:pointer;
 display:none;
 }
-.menu{
-  margin-top: 40px;
-}
-.left-menu, .right-menu {
-  justify-content: space-around;
-  width: 100%;
-  background: rgba(237, 118, 0, 0.15);
-  display: flex;
-  line-height: 50px; /*под высоту картинки в центре*/
+@media (min-width: 992px){
+  .aboutOctaspring{
+  background-image: url(../img/background/group.png);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  .advantagesSlider p{
+    text-align: left !important;
+    margin: auto;
+    line-height: 18px;
+    padding-left: 10px;
+  }
+  .advantagesSlider div{
+    margin-bottom: 30px;
+  }
+
+  h1{
+    margin-top: 200px;
+  }
+
+  .map ymaps{
   border-radius: 25px;
+  }
+
+  .advantagesSlider div{
+    display: flex;
+  }
+
+  .icons{
+  margin-bottom: 20px;
+  }
+  .cardIcons div{
+  padding: 0;
+  }
+
 }
-.center-menu{
-  justify-content: space-around;
-  width: 100%;
-  display: flex;
-  line-height: 50px; /*под высоту картинки в центре*/
-  border-radius: 25px;
+@media (max-width: 992px){
+  .icons div:first-child{
+  margin-bottom: 18px;
+  }
+  .icons{
+    margin-top: 18px;
+  }
+  .footer{
+    margin-top: 30px;
+  }
 }
-.item {
-  min-width: 100px;
-  text-align: center;
-}
-.item:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
-.center-menu img {
-  width: 100%;
-  height: 50px;
+@media (min-width: 768px) and (max-width: 991.98px){
+  .advantagesSlider p{
+    text-align: left !important;
+    margin: auto;
+    line-height: 18px;
+  }
+  .advantagesSlider div{
+    margin-bottom: 20px;
+  }
+  .cardIcons div{
+  padding: 0;
+  }  
 }
