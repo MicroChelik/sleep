@@ -48,14 +48,14 @@ body{
 h2{
   text-align: center;
   margin-bottom: 60px;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 ol{
   padding-left: 15px;
 }
 h2,h1{
- font-family: 'RobotoCondesedBold', sans-serif;
- font-weight: bold;
+  font-family: 'RobotoCondesedBold', sans-serif;
+  font-weight: bold;
 }
 a{
   color: #fff !important;
@@ -127,6 +127,9 @@ a:hover {
   position: relative;
   top: -130px;
 }
+.aboutMattressModal{
+  padding-bottom: 10px;
+}
 .mattressSliderArrows{
   margin-bottom: 5px;
 }
@@ -147,15 +150,13 @@ a:hover {
   color: #fff;
 }
 .fancybox-content{
+  padding: 20px;
   border-radius: 25px;
   border: 1px solid #ED7600;  
 }
 .card{
   border: 1px solid #ED7600;
   margin-bottom: 20px;
-}
-.container{
-  padding-bottom: 40px;
 }
 .aboutMattress{
   height: 12em;
@@ -169,19 +170,30 @@ a:hover {
 .orangeText li{
 	font-family: 'RobotoRegular', sans-serif;
 }
+.fancybox-close-small {
+  width: 50px;
+  height: 50px;
+}
 .floatLeft{
   float: left;
 }
 .footer img{
+  width: 55px;
+  height: 42px;
 	float: left;
 	padding: 0px 10px 10px 0px;
+}
+.footerLogo{
+  width: 101px !important;
+  height: 58px !important;
+  padding: 0 !important;
 }
 .footer p{
 	margin: 0 !important;
 }
 .footer{
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 17px;
 }
 .price{
 	height: 4em;
@@ -220,10 +232,6 @@ a:hover {
   height: 57px;
   width: 241px;
 }
-.footer{
-  line-height: 20px;
-  font-size: 14px;
-}
 .callMeForm button{
   color: #fff;
 }
@@ -233,20 +241,26 @@ a:hover {
   min-height: 41px;
   min-width: 176px;
   margin-bottom: 25px;
+  padding: 9px;
 }
 .personalInformation{
-  font-family: "RobotoCondesedBold", sans-serif;
-  font-weight: bold; 
+  font-family: "RobotoCondesedRegular";
+  font-weight: normal; 
+  text-align: center;
+  /*font-size: 10px;*/
 }
 .personalInformation a{
   color: #828282 !important;
+  font-family: "RobotoCondesedRegular";
+  font-weight: normal;
 }
 .orderMattressBtn{
   display: block;
   margin: auto;
   min-height: 46px;
   min-width: 246px;
-  color: #000;
+  color: #fff !important;
+  font-size: 20px;
 }
 .longBtn{
   width: 100%;
@@ -270,6 +284,11 @@ a:hover {
 }
 .nav-item button{
   color: #ED7600;
+  font-size: 14px;
+}
+.navbar-toggler{
+  padding: 0;
+  font-size: 1rem; 
 }
 .map{
   padding: 0;
@@ -327,6 +346,9 @@ a:hover {
   display: flex;
   line-height: 50px;
   border-radius: 25px;
+}
+.left-menu:first-child{
+  padding-left: 5px;
 }
 .center-menu{
   justify-content: space-around;
@@ -496,11 +518,13 @@ li, ul {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 890px;
+  height: auto;
+  min-height: 700px;
   font-family: "RobotoCondesedBold", sans-serif;
   font-weight: bold;
 }
 #navbarNav{
+  padding-left: 19px;
   position: absolute;
   top: 100px;
   left: 0;
@@ -511,9 +535,20 @@ li, ul {
   display: block;
   transition: all 1s;
 }
+#headerContent p{
+  line-height: 46px;
+  font-size: 33px;
+  font-weight: bold;
+}
 #selectCity{
   background: #ED7600;
   color: #111;
+}
+#help h2{
+  margin-bottom: 10px;
+}
+#help .form-row{
+  padding-top: 30px;
 }
 #toTop {
   width:100px;
@@ -542,18 +577,17 @@ li, ul {
   }
   .advantagesSlider div{
     margin-bottom: 30px;
+    display: flex;
   }
 
   h1{
-    margin-top: 200px;
+    margin-top: 100px;
+    line-height: 79px;
+    font-size: 53px;
   }
 
   .map ymaps{
     border-radius: 25px;
-  }
-
-  .advantagesSlider div{
-    display: flex;
   }
 
   .icons{
@@ -561,6 +595,10 @@ li, ul {
   }
   .cardIcons div{
     padding: 0;
+  }
+
+  .container{
+    padding-bottom: 40px;
   }
 
 }
@@ -573,6 +611,14 @@ li, ul {
   }
   .footer{
     margin-top: 30px;
+  }
+  #headerContent p{
+    line-height: 31px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  h1{
+    font-size: 36px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px){
