@@ -83,8 +83,8 @@
 	  			</button>
 	 			<div class="collapse navbar-collapse" id="navbarNav">
 	 				<ul class="navbar-nav">
-	 					<li class="nav-item active">
-	 						<a class="nav-link" href="#"><img src="img/logos/logo_header.png" alt="Логотип Русон"> НАШ ОСНОВНОЙ САЙТ <p>РУСОН.РФ</p><span class="sr-only">(current)</span></a>
+	 					<li class="nav-item active mobileMenuSmallText">
+	 						<a href="https://ruson.su/" target="blank" rel="noopener noreferrer"><img src="img/logos/logo_header.png" alt="Логотип Русон" class="floatLeft"> НАШ ОСНОВНОЙ САЙТ <p>РУСОН.РФ</p><span class="sr-only">(current)</span></a>
 	 					</li>
 	 					<li class="nav-item">
 	 						<a class="nav-link" href="#aboutOctaspring">Что такое OCTASPRING?</a>
@@ -109,13 +109,13 @@
 	 							<button class="orangeBtn orderCallBtn">Заказать звонок</button>
 	 						</a>
 	 					</li>
-	 					<li class="nav-item">
-	 						<a class="nav-link" href="#">RUSIN.IZH@YANDEX.RU</a>
+	 					<li class="nav-item mobileMenuSmallText">
+	 						<a class="nav-link" href="#">RUSON.IZH@YANDEX.RU</a>
 	 					</li>
-	 					<li class="nav-item">
+	 					<li class="nav-item mobileMenuSmallText">
 	 						<a class="nav-link" href="#">8 (3412) 31-09-06</a>
 	 					</li>
-	 					<li class="nav-item">
+	 					<li class="nav-item mobileMenuSmallText">
 	 						
 	 					</li><a class="nav-link" href="#">8-922-687-62-11</a>
 	 				</ul>
@@ -1286,40 +1286,84 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 col-md-5 orangeMark">
+				<div class="col-12 col-md-5">
 					
-					<select class="form-control" id="selectCity">
-						<option>Ижевск</option>
-						<option>Город2</option>
-						<option>Город3</option>
-					</select>
-				
-				
-					<ul>
-						<li>
-							<span>ул. Холмогорова, 70 ТД "Электротехника в быту"</span>
-						</li>
-						<li>
-							<span>ул. Кирова, 146 "А" ТВЦ «Кировский» паркинг (Строй Порт)</span>
-						</li>
-						<li>
-							<span>ул. Пушкинская, 163а, «ТЦ «Айсберг»</span>
-						</li>
-						<li>
-							<span>ул. Молодежная, 74, (Торговый отдел)</span>
-						</li>
-						<li>
-							<span>ул. Заречная (производство)</span>
-						</li>
-					</ul>
-					<p>г. Ижевск, ул. Холмогорова, 70 ТД "Электротехника в быту" (левый вход)</p>
-					<p class="workTime">Режим работы:</p>
-						<p class="workTime">ПН - ПТ с 9:30 до 19:30</p>
-						<p>СБ, ВС с 9:30 до 18:00</p>
-						<p class="workTime">Тел./Факс:</p>
-						<p class="workTime">(3412) 31-09-06</p>
-						<p>8-922-687-62-11</p>
-					
+					<div class="contacts__info">
+					   <div class="city__select">Ижевск</div>
+					   <ul class="city__list">
+					      <li id="izhevsk" class="city__item active">Ижевск</li>
+					      <li id="votk" class="city__item">Воткинск</li>
+					      <li id="perm" class="city__item">Пермь</li>
+					   </ul>
+					   <!--Ижевск--> 
+					   <ul class="address__list address__list--izhevsk active orangeMark">
+					      <li class="address__item active" data-class="holm"><p>ул. Холмогорова, 70 ТД "Электротехника в быту"</p></li>
+					      <li class="address__item active" data-class="kirova"><p>ул. Кирова, 146 "А" ТВЦ «Кировский» паркинг (Строй Порт)</p></li>
+					      <li class="address__item active" data-class="pushk"><p>ул. Пушкинская, 163а, «ТЦ «Айсберг»</p></li>
+					      <li class="address__item active" data-class="molodezh"><p>ул. Молодежная, 74, (Торговый отдел)</p></li>
+					      <li class="address__item active" data-class="zarech"><p>ул. Заречная (производство)</p></li>
+					   </ul>
+					   <!--Воткинск--> 
+					   <ul class="address__list address__list--votk orangeMark">
+					      <li class="address__item" data-class="kazan_1"><p>ул. Казанская, 1 (ж/д вокзал)</p></li>
+					   </ul>
+					   <!--Пермь--> 
+					   <ul class="address__list address__list--perm orangeMark">
+					      <li class="address__item" data-class="tramv_12"><p>ул. Трамвайная, 12, корпус 2; Главатских Дмитрий Петрович</p></li>
+					   </ul>
+					   <!--Ижевск--> 
+					   <div class="contacts__list contacts__list--holm active">
+					      <div class="contacts__title">г. Ижевск, ул. Холмогорова, 70 ТД "Электротехника в быту" (левый вход)</div>
+					      <div class="contacts__title">Режим работы:</div>
+					      <div class="contacts__desc">ПН - ПТ с 9:30 до 19:30<br>СБ, ВС с 9:30 до 18:00</div>
+					      <div class="contacts__title">Тел./Факс:</div>
+					      <div class="contacts__desc">(3412) 31-09-06<br>8-922-687-62-11</div>
+					   </div>
+					   <div class="contacts__list contacts__list--kirova">
+					      <div class="contacts__title">г. Ижевск, ул. Кирова, 146 "А" ТВЦ «Кировский» паркинг (Строй Порт)</div>
+					      <div class="contacts__title">Режим работы:</div>
+					      <div class="contacts__desc">ПН - ПТ с ? до ?<br>СБ, ВС с ? до ?</div>
+					      <div class="contacts__title">Тел./Факс:</div>
+					      <div class="contacts__desc">?<br>?</div>
+					   </div>
+					   <div class="contacts__list contacts__list--pushk">
+					      <div class="contacts__title">г. Ижевск, ул. Пушкинская, 163а, «ТЦ «Айсберг»</div>
+					      <div class="contacts__title">Режим работы:</div>
+					      <div class="contacts__desc">ПН - ПТ с 10:00 до 19:00<br>СБ, ВС с 10:00 до 18:00</div>
+					      <div class="contacts__title">Телефон:</div>
+					      <div class="contacts__desc">+7 (3412) 77-31-25<br>+7 (922) 500-57-10</div>
+					   </div>
+					   <div class="contacts__list contacts__list--molodezh">
+					      <div class="contacts__title">г. Ижевск, ул. Молодежная, 74, (Торговый отдел)</div>
+					      <div class="contacts__title">Режим работы:</div>
+					      <div class="contacts__desc">ПН - ПТ с 10:00 до 19:00<br>СБ, ВС с 10:00 до 18:00</div>
+					      <div class="contacts__title">Телефон:</div>
+					      <div class="contacts__desc">+7 (3412) 77-31-35<br>+7 (922) 500-57-10</div>
+					   </div>
+					   <div class="contacts__list contacts__list--zarech">
+					      <div class="contacts__title">д. Ягул, ул. Заречная, 41 в;г (производство)</div>
+					      <div class="contacts__title">Режим работы:</div>
+					      <div class="contacts__desc">ПН - ПТ с ? до ?<br>СБ, ВС с ? до ?</div>
+					      <div class="contacts__title">Телефон:</div>
+					      <div class="contacts__desc">+7 (922) 692-20-90<br>+7 (922) 691-20-00</div>
+					   </div>
+					   <!--Воткинск--> 
+					   <div class="contacts__list contacts__list--kazan_1">
+					      <div class="contacts__title">г. Воткинск, ул. Казанская, 1 (ж/д вокзал)</div>
+					      <div class="contacts__title">Режим работы:</div>
+					      <div class="contacts__desc">Вт - ПТ с 10:00 до 19:00<br>СБ с 10:00 до 17:00<br>ВС с 10:00 до 15:00<br>ПН Выходной</div>
+					      <div class="contacts__title">Тел./Факс:</div>
+					      <div class="contacts__desc">(34145) 5-12-10<br>8-922-687-83-91</div>
+					   </div>
+					   <!--Пермь--> 
+					   <div class="contacts__list contacts__list--tramv_12">
+					      <div class="contacts__title">г. Пермь, ул. Трамвайная, 12, корпус 2</div>
+					      <div class="contacts__title">Режим работы:</div>
+					      <div class="contacts__desc">ПН - ПТ с 9:00 до 18:00<br>СБ, ВС Выходной</div>
+					      <div class="contacts__title">Телефон:</div>
+					      <div class="contacts__desc">8 (342) 202-21-24</div>
+					   </div>
+					</div>
 					<a data-fancybox data-animation-duration="700" data-src="#partnerModal" href="javascript:;">
 						<button class="orangeBtn partnerBtn">Стать нашим партнером</button>
 					</a>
@@ -1345,13 +1389,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-7 map">
+				<div class="col-12 col-md-7 map contacts__map" id="map">
 					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A47e01953a09a72a8a45db2b05e3627a0631f470c795740fc2e9fcf5345cf8702&amp;width=100%&amp;height=379&amp;lang=ru_RU&amp;scroll=true"></script>
 				</div>
 			</div>
 			<div class="row footer align-items-end">
 				<div class="col-md-3 d-none d-md-inline-block">
-					<img src="img/logos/logoBig.png" class="footerLogo">
+					<a href="https://ruson.su/" target="blank" rel="noopener noreferrer">
+						<img src="img/logos/logoBig.png" class="footerLogo">
+					</a>
 				</div>
 				<div class="col-12 col-md-3">
 					<img src="img/icons/footerIcons/1.png">
