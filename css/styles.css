@@ -346,6 +346,9 @@ a:hover {
 .advantagesSlider p{
   text-align: center;
 }
+.fixedHeight{
+  height: 103px;
+}
 .workTime{
 	margin: 0;
 }
@@ -395,6 +398,7 @@ a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 15px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -629,7 +633,6 @@ li, ul {
 }
 #headerContent{
   display: block;
-  transition: all 1s;
 }
 #headerContent p{
   line-height: 46px;
@@ -717,6 +720,15 @@ li, ul {
   }
   h1{
     font-size: 36px;
+  }
+  .fixedHeight{
+    height: 135px;
+  }
+  .fixedHeightImg{
+    height: 75px;
+  }
+  .fixedPadding{
+    padding-top: 5%;
   }
   #header{
     height: 650px;

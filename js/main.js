@@ -36,14 +36,16 @@ $(document).ready(function() {
 		});	 
 	});
 
-	$('#toggle').click(function() {
-		if($('#headerContent').css('display') == "block"){
-			$('#headerContent').css("display", 'none');
+	$('#toggle').click(function () {
+		//$('.header-content').fadeOut().fadeIn();
+		$('#toggle').toggleClass('on');
+		if($('#toggle').hasClass('on')){
+			$('#headerContent').stop().fadeOut(50);
 		} else {
-			$('#headerContent').css("display", 'block');
-			$('#headerContent').css("transition", 'all .9s ease');
+			$('#headerContent').fadeIn(2000);
 		}
-	});
+	})
+
 	
 	$('.select__list').click(function(){
 		$(this).find('.select__option').slideToggle(300);
