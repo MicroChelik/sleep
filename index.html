@@ -35,17 +35,19 @@
 					</div>
 					<div style="display: none;" id="orderCallModal" class="animated-modal">
 						<div class="row justify-content-center">
+							<form action="callOrder.php" method="post" id="callMeFormWithoutEmail">
 							<h2>ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</h2>
 							<div class="col-12 form-group">
-								<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+								<input type="text" class="form-control" name="name" placeholder="Ваше имя *">
 							</div>
 							<div class="col-12 form-group">
-								<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+								<input type="" class="form-control" name="phoneNumber" placeholder="Контактный номер телефона *">
 							</div>
 							<div class="col-10 col-md-6 form-group">
 								<button type="submit" class="orangeBtn longBtn" id="">Заказать звонок</button>
 							</div>
-							<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+							<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="https://ruson.su/assets/files/%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.pdf" target="blank" rel="noopener noreferrer">Узнать больше</a></p>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -282,7 +284,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="card">
 						<a data-fancybox data-animation-duration="700" data-src="#cottonModal" href="javascript:;">
-							<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас COTTON">
+							<img class="card-img-top  products__button--click" src="img/mattresses/Cotton.png" alt="Матрас COTTON">
 						</a>
 						<div class="card-body">
 							<h3 class="card-title">Матрас COTTON</h3>
@@ -336,7 +338,7 @@
 								<span>от 10 550 руб.</span>
 							</div>
 							<a data-fancybox data-animation-duration="700" data-src="#cottonModal" href="javascript:;">
-							<button class="orangeBtn orderMattressBtn">Заказать</button>
+							<button class="orangeBtn orderMattressBtn products__button--click">Заказать</button>
 							</a>
 							<div style="display: none;" id="cottonModal" class="animated-modal">
 								<div class="row align-items-center">
@@ -344,7 +346,7 @@
 										<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас COTTON">
 									</div>
 									<div class="col-12 col-lg-6 orangeText aboutMattressModal">
-										<h2>Матрас COTTON</h2>
+										<h2 class="mattressTitle">Матрас COTTON</h2>
 										<p>Дополнительные ребра жесткости из высокоплотной пены обеспечивают уникальную упругость, дарящую здоровый сон и заряд бодрости на весь день.</p>
 										<span>Состав:</span>
 										<ol>
@@ -395,7 +397,7 @@
 										</p>
 										<p>Матрас COTTON подарит Вам здоровый сон и заряд бодрости утром.</p>	
 									</div>
-									<div class="row justify-content-center">							
+									<div class="row justify-content-center">															
 										<div class="col-12 noPaddingRIght">
 											<div class="cart-product__selection">
 												<div class="row w-100">
@@ -443,21 +445,24 @@
 													</div>
 												</div>
 											</div>
-										</div>
-										<form>
+										</div>		
+										<form class="callmeback-form callmeback-form--order mattressForm" action="orderMattress.php" method="post">									
 										  	<div class="col-12 form-group">
-									    			<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+									    			<input type="text" class="form-control" name="name"  placeholder="Ваше имя *">
 									   		</div>
 									   		<div class="col-12 form-group">
-									   			<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+									   			<input type="" class="form-control" name="phoneNumber" placeholder="Контактный номер телефона *">
 											</div>
 									   		<div class="col-12 form-group">
-									    		<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									    		<input type="email" class="form-control" name="email" placeholder="Ваше email *">
 									   		</div>
 									   		<div class="col-6 m-auto">			
-									   			<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   			<button type="submit" class="orangeBtn longBtn form-group">Заказать</button>
 									   		</div>
-									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="">Узнать больше</a></p>		
+									   		<input type="hidden" name="price" id="product_price" value="">
+									   		<input type="hidden" name="size" id="product_size" value="">
+									   		<input type="hidden" name="mattress" id="mattress" value="">
+									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="https://ruson.su/assets/files/%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.pdf" target="blank" rel="noopener noreferrer">Узнать больше</a></p>		
 									   	</form>
 									</div>									
 								</div>
@@ -468,7 +473,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="card">
 						<a data-fancybox data-animation-duration="700" data-src="#velvetModal" href="javascript:;">
-							<img class="card-img-top" src="img/mattresses/Velvet.png" alt="Матрас VELVET">
+							<img class="card-img-top products__button--click" src="img/mattresses/Velvet.png" alt="Матрас VELVET">
 						</a>
 						<div class="card-body">
 							<h3 class="card-title">Матрас VELVET</h3>
@@ -521,7 +526,7 @@
 								<span>от 12 800 руб.</span>
 							</div>
 							<a data-fancybox data-animation-duration="700" data-src="#velvetModal" href="javascript:;">
-								<button class="orangeBtn orderMattressBtn">Заказать</button>
+								<button class="orangeBtn orderMattressBtn products__button--click">Заказать</button>
 							</a>
 							<div style="display: none;" id="velvetModal" class="animated-modal">
 								<div class="row align-items-center">
@@ -529,7 +534,7 @@
 										<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас VELVET">
 									</div>
 									<div class="col-12 col-lg-6 orangeText aboutMattressModal">
-										<h2>Матрас VELVET</h2>
+										<h2 class="mattressTitle">Матрас VELVET</h2>
 										<p>Уникальный комфортный слой матраса- целых 10 см сочетания с Octaspring. Такая комбинация материалов обеспечивает максимальное расслабление и качественный сон, способствует быстрому засыпанию и востановлению организма.</p>
 										<span>Состав:</span>
 										<ol>
@@ -629,20 +634,23 @@
 												</div>
 											</div>
 										</div>
-										<form>
+										<form class="callmeback-form callmeback-form--order mattressForm" action="orderMattress.php" method="post">
 										  	<div class="col-12 form-group">
-									    			<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+									    			<input type="text" class="form-control" name="name" placeholder="Ваше имя *">
 									   		</div>
 									   		<div class="col-12 form-group">
-									   			<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+									   			<input type="" class="form-control" name="phoneNumber" placeholder="Контактный номер телефона *">
 											</div>
 									   		<div class="col-12 form-group">
-									    		<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									    		<input type="email" class="form-control" name="email" placeholder="Ваше email *">
 									   		</div>
 									   		<div class="col-6 m-auto">			
-									   			<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   			<button type="submit" class="orangeBtn longBtn form-group">Заказать</button>
 									   		</div>
-									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="">Узнать больше</a></p>		
+									   		<input type="hidden" name="price" id="product_price" value="">
+									   		<input type="hidden" name="size" id="product_size" value="">
+									   		<input type="hidden" name="mattress" id="mattress" value="">
+									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="https://ruson.su/assets/files/%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.pdf" target="blank" rel="noopener noreferrer">Узнать больше</a></p>		
 									   	</form>
 									</div>
 								</div>
@@ -653,7 +661,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="card">
 						<a data-fancybox data-animation-duration="700" data-src="#tweedModal" href="javascript:;">	
-							<img class="card-img-top" src="img/mattresses/Tweed.png" alt="Матрас TWEED">
+							<img class="card-img-top products__button--click" src="img/mattresses/Tweed.png" alt="Матрас TWEED">
 						</a>
 						<div class="card-body">
 							<h3 class="card-title">Матрас TWEED</h3>
@@ -706,7 +714,7 @@
 								<span>от 14 900 руб.</span>
 							</div>
 							<a data-fancybox data-animation-duration="700" data-src="#tweedModal" href="javascript:;">
-								<button class="orangeBtn orderMattressBtn">Заказать</button>
+								<button class="orangeBtn orderMattressBtn products__button--click">Заказать</button>
 							</a>
 							<div style="display: none;" id="tweedModal" class="animated-modal">
 								<div class="row align-items-center">
@@ -714,7 +722,7 @@
 										<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас TWEED">
 									</div>
 									<div class="col-12 col-lg-6 orangeText aboutMattressModal">
-										<h2>Матрас TWEED</h2>
+										<h2 class="mattressTitle">Матрас TWEED</h2>
 										<p>Матрас трансформер- целых восемь комбинаций в одном. Вы можете легко выбрать нужную степень комфорта и поддержки просто перевернув, либо повернув матрас.</p>
 										<span>Состав:</span>
 										<ol>
@@ -813,20 +821,23 @@
 												</div>
 											</div>
 										</div>
-										<form>
+										<form class="callmeback-form callmeback-form--order mattressForm" action="orderMattress.php" method="post">
 										  	<div class="col-12 form-group">
-									    			<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+									    			<input type="text" class="form-control" name="name" placeholder="Ваше имя *">
 									   		</div>
 									   		<div class="col-12 form-group">
-									   			<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+									   			<input type="" class="form-control" name="phoneNumber" placeholder="Контактный номер телефона *">
 											</div>
 									   		<div class="col-12 form-group">
-									    		<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									    		<input type="email" class="form-control" name="email" placeholder="Ваше email *">
 									   		</div>
 									   		<div class="col-6 m-auto">			
-									   			<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   			<button type="submit" class="orangeBtn longBtn form-group">Заказать</button>
 									   		</div>
-									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="">Узнать больше</a></p>		
+									   		<input type="hidden" name="price" id="product_price" value="">
+									   		<input type="hidden" name="size" id="product_size" value="">
+									   		<input type="hidden" name="mattress" id="mattress" value="">
+									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="https://ruson.su/assets/files/%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.pdf" target="blank" rel="noopener noreferrer">Узнать больше</a></p>		
 									   	</form>
 									</div>
 								</div>
@@ -837,7 +848,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="card">
 						<a data-fancybox data-animation-duration="700" data-src="#satinModal" href="javascript:;">	
-							<img class="card-img-top" src="img/mattresses/Satin.png" alt="Матрас SATIN">
+							<img class="card-img-top products__button--click" src="img/mattresses/Satin.png" alt="Матрас SATIN">
 						</a>
 						<div class="card-body">
 							<h3 class="card-title">Матрас SATIN</h3>
@@ -891,7 +902,7 @@
 								<span>от 11 900 руб.</span>
 							</div>
 							<a data-fancybox data-animation-duration="700" data-src="#satinModal" href="javascript:;">
-								<button class="orangeBtn orderMattressBtn">Заказать</button>
+								<button class="orangeBtn orderMattressBtn products__button--click">Заказать</button>
 							</a>
 							<div style="display: none;" id="satinModal" class="animated-modal">
 								<div class="row align-items-center">
@@ -899,7 +910,7 @@
 										<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас SATIN">
 									</div>
 									<div class="col-12 col-lg-6 orangeText aboutMattressModal">
-										<h2>Матрас SATIN</h2>
+										<h2 class="mattressTitle">Матрас SATIN</h2>
 										<p>Повышенная воздухопроницаемость пружин Octaspring обеспечивает комфортную свежесть спального места на протяжении всей ночи.</p>
 										<span>Состав:</span>
 										<ol>
@@ -997,20 +1008,23 @@
 												</div>
 											</div>
 										</div>
-										<form>
+										<form class="callmeback-form callmeback-form--order mattressForm" action="orderMattress.php" method="post">
 										  	<div class="col-12 form-group">
-									    			<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+									    			<input type="text" class="form-control" name="name" placeholder="Ваше имя *">
 									   		</div>
 									   		<div class="col-12 form-group">
-									   			<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+									   			<input type="" class="form-control" name="phoneNumber" placeholder="Контактный номер телефона *">
 											</div>
 									   		<div class="col-12 form-group">
-									    		<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									    		<input type="email" class="form-control" name="email" placeholder="Ваше email *">
 									   		</div>
 									   		<div class="col-6 m-auto">			
-									   			<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   			<button type="submit" class="orangeBtn longBtn form-group">Заказать</button>
 									   		</div>
-									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="">Узнать больше</a></p>		
+									   		<input type="hidden" name="price" id="product_price" value="">
+									   		<input type="hidden" name="size" id="product_size" value="">
+									   		<input type="hidden" name="mattress" id="mattress" value="">
+									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="https://ruson.su/assets/files/%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.pdf" target="blank" rel="noopener noreferrer">Узнать больше</a></p>		
 									   	</form>
 									</div>
 								</div>
@@ -1021,7 +1035,7 @@
 				<div class="col-12 col-lg-4 col-md-6">
 					<div class="card">
 						<a data-fancybox data-animation-duration="700" data-src="#flannelModal" href="javascript:;">
-							<img class="card-img-top" src="img/mattresses/Flannel.png" alt="Матрас FLANNEL">
+							<img class="card-img-top products__button--click" src="img/mattresses/Flannel.png" alt="Матрас FLANNEL">
 						</a>
 						<div class="card-body">
 							<h3 class="card-title">Матрас FLANNEL</h3>
@@ -1076,7 +1090,7 @@
 								<span>от 15 950 руб.</span>
 							</div>
 							<a data-fancybox data-animation-duration="700" data-src="#flannelModal" href="javascript:;">
-								<button class="orangeBtn orderMattressBtn">Заказать</button>
+								<button class="orangeBtn orderMattressBtn products__button--click">Заказать</button>
 							</a>
 							<div style="display: none;" id="flannelModal" class="animated-modal">
 								<div class="row align-items-center">
@@ -1084,7 +1098,7 @@
 										<img class="card-img-top" src="img/mattresses/Cotton.png" alt="Матрас FLANNEL">
 									</div>
 									<div class="col-12 col-lg-6 orangeText aboutMattressModal">
-										<h2>Матрас FLANNEL</h2>
+										<h2 class="mattressTitle">Матрас FLANNEL</h2>
 										<p>Матрас-гибрид, объединяющий в себе преймущества независимых пружин и пенных материалов. Уникальный комфорт Octaspring и классический пружинный блок- вотоснова Вашего хорошего сна!</p>
 										<span>Состав:</span>
 										<ol>
@@ -1186,20 +1200,23 @@
 												</div>
 											</div>
 										</div>
-										<form>
+										<form class="callmeback-form callmeback-form--order mattressForm" action="orderMattress.php" method="post">
 										  	<div class="col-12 form-group">
-									    			<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+									    			<input type="text" class="form-control" name="name" placeholder="Ваше имя *">
 									   		</div>
 									   		<div class="col-12 form-group">
-									   			<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+									   			<input type="" class="form-control" name="phoneNumber" placeholder="Контактный номер телефона *">
 											</div>
 									   		<div class="col-12 form-group">
-									    		<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+									    		<input type="email" class="form-control" name="email" placeholder="Ваше email *">
 									   		</div>
 									   		<div class="col-6 m-auto">			
-									   			<button type="submit" class="orangeBtn longBtn form-group" id="">Заказать</button>
+									   			<button type="submit" class="orangeBtn longBtn form-group">Заказать</button>
 									   		</div>
-									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="">Узнать больше</a></p>		
+									   		<input type="hidden" name="price" id="product_price" value="">
+									   		<input type="hidden" name="size" id="product_size" value="">
+									   		<input type="hidden" name="mattress" id="mattress" value="">
+									   		<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных.<a href="https://ruson.su/assets/files/%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.pdf" target="blank" rel="noopener noreferrer">Узнать больше</a></p>		
 									   	</form>
 									</div>
 								</div>
@@ -1257,21 +1274,21 @@
 				<div class="col-12 text-center">
 					<p>оставьте свои контактные данные, и мы свяжемся с вами в течении 10 минут</p>
 				</div>
-				<form class="form-row justify-content-center callMeForm">
+				<form class="form-row justify-content-center callMeForm" action="send.php" method="post" id="callMeForm">
 					<div class="form-group col-md-4 col-12">
-     					<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+     					<input type="text" class="form-control" name="name" id="" placeholder="Ваше имя *">
     				</div>
     				<div class="form-group col-md-4 col-12">
-     					<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+     					<input type="" class="form-control" name="phoneNumber" id="" placeholder="Контактный номер телефона *">
     				</div>
     				<div class="form-group col-md-4 col-12">
-     					<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+     					<input type="email" class="form-control" name="email" id="email" placeholder="Ваше email *">
     				</div>
     				<div class="form-group col-md-4 col-12">
     					<button type="submit" class="orangeBtn longBtn">Перезвоните мне</button>    					
     				</div>
     				<div class="col-12">
-    					<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+    					<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="https://ruson.su/assets/files/%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.pdf" target="blank" rel="noopener noreferrer">Узнать больше</a></p>
     				</div>
 				</form>
 			</div>
@@ -1369,23 +1386,25 @@
 					</a>
 					<div style="display: none;" id="partnerModal" class="animated-modal">
 						<div class="row justify-content-center">
+							<form action="sendPartner.php" method="post" id="partnerForm">
 							<h2>СТАТЬ НАШИМ ПАРТНЕРОМ</h2>
 							<div class="col-12 form-group">
-								<input type="text" class="form-control" id="" placeholder="Ваше имя *">
+								<input type="text" class="form-control" name="name" id="" placeholder="Ваше имя *">
 							</div>
 							<div class="col-12 form-group">
-								<input type="" class="form-control" id="" placeholder="Контактный номер телефона *">
+								<input type="" class="form-control" name="phoneNumber" id="" placeholder="Контактный номер телефона *">
 							</div>
 							<div class="col-12 form-group">
-								<input type="email" class="form-control" id="email" placeholder="Ваше email *">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Ваше email *">
 							</div>
 							<div class="col-12 form-group">
-								<textarea class="form-control" id="" rows="3" placeholder="Текст сообщения"></textarea>		
+								<textarea class="form-control" name="text" id="" rows="3" placeholder="Текст сообщения"></textarea>		
 							</div>
 							<div class="col-6 form-group">
 								<button type="submit" class="orangeBtn longBtn" id="">Заказать</button>
 							</div>
-							<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="">Узнать больше</a></p>
+							<p class="personalInformation">Нажимая на кнопку, вы даете свое согласие на обработку персональных данных. <a href="https://ruson.su/assets/files/%D0%BF%D0%BE%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0-%D0%B2-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0-%D0%BF%D1%80%D0%B8-%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2.pdf" target="blank" rel="noopener noreferrer">Узнать больше</a></p>
+							</form>
 						</div>
 					</div>
 				</div>

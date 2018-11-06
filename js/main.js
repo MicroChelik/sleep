@@ -46,7 +46,13 @@ $(document).ready(function() {
 		}
 	})
 
-	
+
+	$('.products__button--click').click(function(){
+		mattress = $(this).closest('.card').find('.mattressTitle').text();
+		console.log(mattress);
+		$('.callmeback-form--order #mattress').val(mattress);
+	});
+
 	$('.select__list').click(function(){
 		$(this).find('.select__option').slideToggle(300);
  	});
@@ -59,16 +65,61 @@ $(document).ready(function() {
 		selectedProductParam = $(this).find('.select__param--option').text();
  		productPrice = $(this).closest('.select__list').find('.selected span').text(selectedProductPrice),
  		selectedPrice = $(this).closest('.select__list').find('#price').text(),
+ 		
 		price = parseInt(selectedPrice.replace(/\D+/g,""));
-
-		console.log(price);
+		
 
  		$(this).closest('.select__list').find('.selected .select__param').text(selectedProductParam);
- 		console.log($(this).closest('.cart-product__value').find('.cart-product__price span:first'));	
 		$(this).closest('.row').find('.cart-product__price span:first').text(price.toLocaleString('ru'));
+		$('.callmeback-form--order #product_size').val(selectedProductParam);
+		$('.callmeback-form--order #product_price').val(price.toLocaleString('ru'));
  	});
 
 ////// 
+	$("#callMeForm").submit(function() {
+            var form_data = $(this).serialize();
+            $.ajax({
+	            type: "POST",
+	            url: "send.php",
+	            data: form_data,
+	            success: function() {
+	                   alert("Ваше сообщение отпрвлено!");
+	            }
+	        });
+    });	
+    $(".mattressForm").submit(function() {
+            var form_data = $(this).serialize();
+            $.ajax({
+	            type: "POST",
+	            url: "orderMattress.php",
+	            data: form_data,
+	            success: function() {
+	                   alert("Ваша заявка на заказ отправлена!");
+	            }
+	        });
+    });	
+    $("#callMeFormWithoutEmail").submit(function() {
+            var form_data = $(this).serialize();
+            $.ajax({
+	            type: "POST",
+	            url: "callOrder.php",
+	            data: form_data,
+	            success: function() {
+	                   alert("Ваше сообщение отпрвлено!");
+	            }
+	        });
+    });
+    $("#partnerForm").submit(function() {
+            var form_data = $(this).serialize();
+            $.ajax({
+	            type: "POST",
+	            url: "sendPartner.php",
+	            data: form_data,
+	            success: function() {
+	                   alert("Ваша заявка отпрвлена!");
+	            }
+	        });
+    });
 
 //map
 	var addressList = $('.address__list'),
