@@ -37,7 +37,6 @@ $(document).ready(function() {
 	});
 
 	$('#toggle').click(function () {
-		//$('.header-content').fadeOut().fadeIn();
 		$('#toggle').toggleClass('on');
 		if($('#toggle').hasClass('on')){
 			$('#headerContent').stop().fadeOut(50);
