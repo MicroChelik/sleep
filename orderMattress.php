@@ -11,6 +11,6 @@
 	mail("otec-akk@mail.ru", "Заявка на заказ матраса с сайта Octaspring", $message, 
      "From: mrpicklericklez@yandex.ru \r\n" 
     ."X-Mailer: PHP/" . phpversion());
-    header('Location: http://sleep/',true, 301);
+    header('Location: http://octaspring.ruson.su/#products',true, 301);
     return;
 ?>
