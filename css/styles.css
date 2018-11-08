@@ -612,6 +612,12 @@ li, ul {
   line-height: 17px;
   font-size: 12px;
 }
+.ymaps-map{
+  min-height: 350px;
+}
+#map{
+  min-height: 350px;
+}
 
 #header{
   background-image: url('../img/background/background.png');
@@ -681,7 +687,7 @@ li, ul {
     font-size: 53px;
   }
 
-  .map ymaps{
+  .ymaps-i-ua_js_yes{
     border-radius: 25px;
   }
   .map{
@@ -746,4 +752,9 @@ li, ul {
   .cardIcons div{
     padding: 0;
   }  
+}
+@media (max-width: 576px){
+  .callMeForm{
+    max-width: 412px;
+  }
 }
