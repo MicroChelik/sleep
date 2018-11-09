@@ -41,7 +41,9 @@ font-style: normal;
 
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'RobotoCondesedRegular', sans-serif; 
 }
@@ -150,7 +152,7 @@ a:hover {
   color: #fff;
 }
 .fancybox-content{
-  padding: 20px;
+  padding: 25px;
   border-radius: 25px;
   border: 1px solid #ED7600;  
 }
