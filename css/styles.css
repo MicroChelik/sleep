@@ -49,8 +49,8 @@ body{
 }
 h2{
   text-align: center;
-  margin-bottom: 60px;
-  padding-top: 40px;
+  margin-bottom: 20px;
+  padding-top: 10px;
 }
 ol{
   padding-left: 15px;
@@ -237,6 +237,7 @@ a:hover {
 }
 .callMeForm button{
   color: #fff;
+  margin-top: 10px;
 }
 .partnerBtn{
   background: transparent;
@@ -499,7 +500,7 @@ li, ul {
 }
 .select__value {
   width: 50%;
-  padding: 8px 20px;
+  padding: 8px 30px;
   font-size: 16px;
   -webkit-border-radius: 0 10em 10em 0;
   border-radius: 0 10em 10em 0;
@@ -617,10 +618,18 @@ li, ul {
 .ymaps-map{
   min-height: 350px;
 }
+
+#partnerModal h2,
+#orderCallModal h2{
+  padding-right: 10px;
+  padding-left: 10px;
+}
 #map{
   min-height: 350px;
 }
-
+#advantages .container{
+  padding-bottom: 0;
+}
 #header{
   background-image: url('../img/background/background.png');
   background-repeat: no-repeat;
@@ -663,6 +672,12 @@ li, ul {
   display:none;
 }
 @media (min-width: 992px){
+  h2{
+    text-align: center;
+    margin-bottom: 60px;
+    padding-top: 40px;
+  }
+
   .aboutOctaspring{
   background-image: url(../img/background/group.png);
     height: auto;
