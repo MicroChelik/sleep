@@ -166,6 +166,9 @@ a:hover {
 .composition{
   height: 20em;
 }
+.callmeback-form{
+ width: 80%;
+}
 .orangeText span{
   color: #ED7600;
 }
@@ -298,8 +301,11 @@ a:hover {
 .navbar-nav img{
   padding-right: 10px;
 }
+.navbar-nav p{
+  margin-bottom: 0;
+}
 .navbar-nav button{
-  margin-top: 2px;
+  margin-top: 12px;
   margin-bottom: 12px;
 }
 .mobileMenuSmallText{
@@ -308,6 +314,8 @@ a:hover {
 }
 .map{
   padding: 0;
+  width: 600px;
+  height: 400px;
 }
 .form-control{
   border-radius: 25px;
@@ -666,7 +674,7 @@ li, ul {
   width:100px;
   padding:5px;
   position:fixed;
-  bottom:10px;
+  bottom:40px;
   right:10px;
   cursor:pointer;
   display:none;
@@ -704,7 +712,7 @@ li, ul {
     font-size: 53px;
   }
 
-  .ymaps-i-ua_js_yes{
+  .ymaps-2-1-69-map ymaps{
     border-radius: 25px;
   }
   .map{
@@ -774,4 +782,17 @@ li, ul {
   .callMeForm{
     max-width: 412px;
   }
+  .fixedHeight{
+    height: 166px;
+  }
+  #toTop {
+    width:100px;
+    padding:5px;
+    position:fixed;
+    bottom:40px;
+    right:-25px;
+    cursor:pointer;
+    display:none;
+  }
+
 }
