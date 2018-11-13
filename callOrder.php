@@ -1,12 +1,14 @@
 <?php
-	$name = $_POST['name'];
-	$phoneNumber = $_POST['phoneNumber'];
+$name = $_POST['name'];
+$phoneNumber = $_POST['phoneNumber'];
+$message = 'Звонок заказал: ' . $name . ". Номер телефона:" . $phoneNumber . " .";
+$headers = 'From: OctaspringRuson@yandex.ru' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
 
-    
-	$message = 'Звонок заказал: ' . $name . ". Номер телефона:" . $phoneNumber . " .";
-	mail("otec-akk@mail.ru", "Заявка на звонок с сайта Octaspring", $message, 
-     "From: mrpicklericklez@yandex.ru \r\n" 
-    ."X-Mailer: PHP/" . phpversion());
-    header('Location: http://octaspring.ruson.su/',true, 301);
-    return;
+if(mail("ruson.izh@yandex.ru", "Заявка на звонок с сайта Octaspring", $message, $headers)):
+	die("message sent");
+else:
+	die("message not sent");
+endif;
+
 ?>

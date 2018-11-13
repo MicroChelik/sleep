@@ -2,6 +2,8 @@
 
 font-family: 'RobotoRegular';
 
+font-display: auto;
+
 src: url('../css/fonts/Roboto-Regular-webfont.woff');
 
 src: url('../css/fonts/Roboto-Regular-webfont.woff') format('woff');
@@ -15,6 +17,8 @@ font-style: normal;
 @font-face{
 
 font-family: 'RobotoCondesedRegular';
+
+font-display: auto;
 
 src: url('../css/fonts/RobotoCondensed-Regular-webfont.woff');
 
@@ -30,6 +34,8 @@ font-style: normal;
 @font-face{
 
 font-family: 'RobotoCondesedBold';
+
+font-display: auto;
 
 src: url('../css/fonts/RobotoCondensed-Bold-webfont.woff');
 
@@ -712,7 +718,10 @@ li, ul {
     font-size: 53px;
   }
 
-  .ymaps-2-1-69-map ymaps{
+  .ymaps-2-1-69-map{
+    border-radius: 25px;
+  }
+  .ymaps-2-1-69-inner-panes{
     border-radius: 25px;
   }
   .map{

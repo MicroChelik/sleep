@@ -81,9 +81,13 @@ $(document).ready(function() {
 	            type: "POST",
 	            url: "send.php",
 	            data: form_data,
-	            success: function() {
+	            success: function(data) {
+                console.log('test');
 	                   alert("Ваше сообщение отпрвлено!");
-	            }
+	            },
+              error: function(e) {
+                  console.log('test');
+              }
 	        });
     });
     $(".mattressForm").submit(function() {
@@ -94,7 +98,10 @@ $(document).ready(function() {
 	            data: form_data,
 	            success: function() {
 	                   alert("Ваша заявка на заказ отправлена!");
-	            }
+	            },
+              error: function(e) {
+                  console.log('test');
+              }
 	        });
     });
     $("#callMeFormWithoutEmail").submit(function() {
@@ -103,9 +110,13 @@ $(document).ready(function() {
 	            type: "POST",
 	            url: "callOrder.php",
 	            data: form_data,
-	            success: function() {
+	            success: function(data) {
+                console.log('test');
 	                   alert("Ваше сообщение отпрвлено!");
-	            }
+	            },
+              error: function(e) {
+                  console.log('test');
+              }
 	        });
     });
     $("#partnerForm").submit(function() {
@@ -114,9 +125,12 @@ $(document).ready(function() {
 	            type: "POST",
 	            url: "sendPartner.php",
 	            data: form_data,
-	            success: function() {
+	            success: function(data) {
 	                   alert("Ваша заявка отпрвлена!");
-	            }
+	            },
+              error: function(e) {
+                  console.log('test');
+              }
 	        });
     });
 
@@ -171,7 +185,7 @@ $(document).ready(function() {
 
 
 	ymaps.ready(init);
-	
+
 	//заводим координаты дилеров с описанием в массив
 	var placemarks = [
 		{
@@ -218,8 +232,8 @@ $(document).ready(function() {
 		},
 	]
 
-	
-	
+
+
 	var myMap, myAction, geoObjects= [];
 
 	function init () {
@@ -231,14 +245,14 @@ $(document).ready(function() {
 	        duration: 50
 	    });
 
-    
+
 		for (var i = 0; i < placemarks.length; i++) {
 			geoObjects[i] = new ymaps.Placemark([placemarks[i].lat, placemarks[i].long], {
 					balloonContent: placemarks[i].balloonContent,
 				},
 				{
 					preset: placemarks[i].preset
-				} 
+				}
 			);
 		}
 
@@ -248,22 +262,22 @@ $(document).ready(function() {
 		//myMap.geoObjects.add(myPlacemark);
 		clusterer.add(geoObjects);
 
-	    myAction1 = new ymaps.map.action.Single({ 
+	    myAction1 = new ymaps.map.action.Single({
 	          center: [56.952264,53.319917],
 	          zoom: 14,
 	          duration: 1000
 		});
-	    myAction2 = new ymaps.map.action.Single({ 
+	    myAction2 = new ymaps.map.action.Single({
 	          center: [56.874257,53.223743],
 	          zoom: 16,
 	          duration: 1000
 		});
-		myAction3 = new ymaps.map.action.Single({ 
+		myAction3 = new ymaps.map.action.Single({
 			center: [56.863124, 53.221300],
 			zoom: 16,
 			duration: 1000
 		});
-		myAction4 = new ymaps.map.action.Single({ 
+		myAction4 = new ymaps.map.action.Single({
 			center: [56.836840, 53.215991],
 			zoom: 16,
 			duration: 1000
@@ -307,5 +321,5 @@ $(document).ready(function() {
 		});
 
 	}
-	
+
 });
