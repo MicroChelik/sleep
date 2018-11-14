@@ -72,10 +72,14 @@ $(document).ready(function() {
 		$('.callmeback-form--order #product_size').val(selectedProductParam);
 		$('.callmeback-form--order #product_price').val(price.toLocaleString('ru'));
  	});
-
+ 		
 
 
 	$("#callMeForm").submit(function() {
+		var response = grecaptcha.getResponse();
+		if(response.length == 0){
+			alert("Подтвердите, что Вы не являетесь роботом!");
+		}else{
             var form_data = $(this).serialize();
             $.ajax({
 	            type: "POST",
@@ -83,14 +87,19 @@ $(document).ready(function() {
 	            data: form_data,
 	            success: function(data) {
                 console.log('test');
-	                   alert("Ваше сообщение отпрвлено!");
+	                   alert("Ваша заявка на звонок отправлена!");
 	            },
               error: function(e) {
                   console.log('test');
               }
 	        });
+        }
     });
     $(".mattressForm").submit(function() {
+    	var response = grecaptcha.getResponse();
+		if(response.length == 0){
+			alert("Подтвердите, что Вы не являетесь роботом!");
+		}else{
             var form_data = $(this).serialize();
             $.ajax({
 	            type: "POST",
@@ -103,23 +112,35 @@ $(document).ready(function() {
                   console.log('test');
               }
 	        });
+	    }
     });
     $("#callMeFormWithoutEmail").submit(function() {
-            var form_data = $(this).serialize();
-            $.ajax({
-	            type: "POST",
-	            url: "callOrder.php",
-	            data: form_data,
-	            success: function(data) {
-                console.log('test');
-	                   alert("Ваше сообщение отпрвлено!");
-	            },
-              error: function(e) {
-                  console.log('test');
-              }
-	        });
+		var response = grecaptcha.getResponse();
+		console.log(response);
+		if(response.length == 0){
+			alert("Подтвердите, что Вы не являетесь роботом!");
+		}else{
+	            var form_data = $(this).serialize();
+	            $.ajax({
+		            type: "POST",
+		            url: "callOrder.php",
+		            data: form_data,
+		            success: function(data) {
+	                console.log('test');
+		                   alert("Ваша заявка на звонок отправлена!");
+		            },
+	              error: function(e) {
+	                  console.log('test');
+	              }
+		        });
+        	}
     });
     $("#partnerForm").submit(function() {
+    	var response = grecaptcha.getResponse();
+    	console.log(response);
+		if(response.length == 0){
+			alert("Подтвердите, что Вы не являетесь роботом!");
+		}else{
             var form_data = $(this).serialize();
             $.ajax({
 	            type: "POST",
@@ -132,6 +153,7 @@ $(document).ready(function() {
                   console.log('test');
               }
 	        });
+        }
     });
 
 //map

@@ -77,8 +77,10 @@ a:hover {
 .footer a:visited {
   color: #c1c1c1;
 }
-.animated-modal {
+.animated-modal-mattress{
   max-width: 800px;
+}
+.animated-modal {
   border-radius: 4px;
   overflow: hidden;
 
@@ -161,6 +163,13 @@ a:hover {
   padding: 25px;
   border-radius: 25px;
   border: 1px solid #ED7600;  
+}
+.captcha{
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 .card{
   border: 1px solid #ED7600;
@@ -301,6 +310,7 @@ a:hover {
   font-size: 14px;
 }
 .navbar-toggler{
+  width: 32px;
   padding: 0;
   font-size: 1rem; 
 }
@@ -644,6 +654,9 @@ li, ul {
 #advantages .container{
   padding-bottom: 0;
 }
+#toggle{
+  width: 32px;
+}
 #header{
   background-image: url('../img/background/background.png');
   background-repeat: no-repeat;
@@ -789,7 +802,7 @@ li, ul {
 }
 @media (max-width: 576px){
   .callMeForm{
-    max-width: 412px;
+    margin: 0;
   }
   .fixedHeight{
     height: 166px;
