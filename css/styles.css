@@ -168,8 +168,11 @@ a:hover {
   margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+  width: 304px;
+}
+.captchaHelp div {
+  margin-left: auto;
+  margin-right: auto;
 }
 .card{
   border: 1px solid #ED7600;
@@ -294,7 +297,7 @@ a:hover {
 }
 .orderCallBtn{
   background: transparent;
-  width: 140px;
+  width: 150px;
   height: 35px;
 }
 .headerBtn{

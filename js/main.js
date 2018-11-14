@@ -76,84 +76,148 @@ $(document).ready(function() {
 
 
 	$("#callMeForm").submit(function() {
-		var response = grecaptcha.getResponse();
-		if(response.length == 0){
-			alert("Подтвердите, что Вы не являетесь роботом!");
-		}else{
-            var form_data = $(this).serialize();
-            $.ajax({
-	            type: "POST",
-	            url: "send.php",
-	            data: form_data,
-	            success: function(data) {
-                console.log('test');
-	                   alert("Ваша заявка на звонок отправлена!");
-	            },
-              error: function(e) {
-                  console.log('test');
-              }
-	        });
-        }
+  		var form_data = $(this).serialize();
+		$.ajax({
+		    type: "POST",
+		    url: "verify_captcha.php",
+		    data: form_data,
+		    success: function(data) {
+		    console.log(data);
+		        var result = data;
+			    var check = 'Подтвердите, что Вы не являетесь роботом!';
+		        if (result != check){
+		           	send();
+		        } else {
+		           	alert(result);
+		        }
+		    },
+		  	error: function(e) {
+		    	console.log('test');
+		      	alert('Введите капчу')
+		  }
+		});
+		function send(){
+		    $.ajax({
+		        type: "POST",
+		        url: "send.php",
+		        data: form_data,
+		        success: function(data) {
+		        	console.log('test');
+		            alert("Ваша заявка на звонок отправлена!");
+		        },
+		      	error: function(e) {
+		          	console.log('test');
+		      	}
+		    });
+		}
     });
     $(".mattressForm").submit(function() {
-    	var response = grecaptcha.getResponse();
-		if(response.length == 0){
-			alert("Подтвердите, что Вы не являетесь роботом!");
-		}else{
-            var form_data = $(this).serialize();
-            $.ajax({
-	            type: "POST",
-	            url: "orderMattress.php",
-	            data: form_data,
-	            success: function() {
-	                   alert("Ваша заявка на заказ отправлена!");
-	            },
-              error: function(e) {
-                  console.log('test');
-              }
-	        });
-	    }
+	 	var form_data = $(this).serialize();
+		$.ajax({
+		    type: "POST",
+		    url: "verify_captcha.php",
+		    data: form_data,
+		    success: function(data) {
+		    console.log(data);
+		        var result = data;
+			    var check = 'Подтвердите, что Вы не являетесь роботом!';
+		        if (result != check){
+		           	send();
+		        } else {
+		           	alert(result);
+		        }
+		    },
+		  	error: function(e) {
+		    	console.log('test');
+		      	alert('Введите капчу')
+		  }
+		});
+		function send(){
+		    $.ajax({
+		        type: "POST",
+		        url: "orderMattress.php",
+		        data: form_data,
+		        success: function(data) {
+		        	console.log('test');
+		            alert("Ваша заявка на заказ отправлена!");
+		        },
+		      	error: function(e) {
+		          	console.log('test');
+		      	}
+		    });
+		}
     });
     $("#callMeFormWithoutEmail").submit(function() {
-		var response = grecaptcha.getResponse();
-		console.log(response);
-		if(response.length == 0){
-			alert("Подтвердите, что Вы не являетесь роботом!");
-		}else{
-	            var form_data = $(this).serialize();
-	            $.ajax({
-		            type: "POST",
-		            url: "callOrder.php",
-		            data: form_data,
-		            success: function(data) {
-	                console.log('test');
-		                   alert("Ваша заявка на звонок отправлена!");
-		            },
-	              error: function(e) {
-	                  console.log('test');
-	              }
-		        });
-        	}
+		var form_data = $(this).serialize();
+		$.ajax({
+		    type: "POST",
+		    url: "verify_captcha.php",
+		    data: form_data,
+		    success: function(data) {
+		    console.log(data);
+		        var result = data;
+			    var check = 'Подтвердите, что Вы не являетесь роботом!';
+		        if (result != check){
+		           	send();
+		        } else {
+		           	alert(result);
+		        }
+		    },
+		  	error: function(e) {
+		    	console.log('test');
+		      	alert('Введите капчу')
+		  }
+		});
+		function send(){
+		    $.ajax({
+		        type: "POST",
+		        url: "callOrder.php",
+		        data: form_data,
+		        success: function(data) {
+		        	console.log('test');
+		            alert("Ваша заявка на звонок отправлена!");
+		        },
+		      	error: function(e) {
+		          	console.log('test');
+		      	}
+		    });
+		}
     });
     $("#partnerForm").submit(function() {
-    	var response = grecaptcha.getResponse();
-    	console.log(response);
-		if(response.length == 0){
-			alert("Подтвердите, что Вы не являетесь роботом!");
-		}else{
-            var form_data = $(this).serialize();
-            $.ajax({
-	            type: "POST",
-	            url: "sendPartner.php",
-	            data: form_data,
-	            success: function(data) {
-	                   alert("Ваша заявка отпрвлена!");
-	            },
-              error: function(e) {
-                  console.log('test');
-              }
-	        });
-        }
+  		var form_data = $(this).serialize();
+		$.ajax({
+		    type: "POST",
+		    url: "verify_captcha.php",
+		    data: form_data,
+		    success: function(data) {
+		    console.log(data);
+		        var result = data;
+			    var check = 'Подтвердите, что Вы не являетесь роботом!';
+		        if (result != check){
+		           	send();
+		        } else {
+		           	alert(result);
+		        }
+		    },
+		  	error: function(e) {
+		    	console.log('test');
+		      	alert('Введите капчу')
+		  }
+		});
+		function send(){
+		    $.ajax({
+		        type: "POST",
+		        url: "sendPartner.php",
+		        data: form_data,
+		        success: function(data) {
+		        	console.log('test');
+		            alert("Ваша заявка отпрвлена!");
+		        },
+		      	error: function(e) {
+		          	console.log('test');
+		      	}
+		    });
+		}
     });
 
 //map

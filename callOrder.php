@@ -1,4 +1,9 @@
 <?php
+if( !$_POST['g-recaptcha-response']){
+	// echo "<script>alert(\"Заполните капчу!\");</script>"; 
+	exit('PFdsfsdfoij');
+}
+else{
 $name = $_POST['name'];
 $phoneNumber = $_POST['phoneNumber'];
 $message = 'Звонок заказал: ' . $name . ". Номер телефона:" . $phoneNumber . " .";
@@ -10,5 +15,5 @@ if(mail("mrpicklericklez@yandex.ru", "Заявка на звонок с сайт
 else:
 	die("message not sent");
 endif;
-
+}
 ?>

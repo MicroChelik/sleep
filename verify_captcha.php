@@ -27,5 +27,5 @@ if ($decoded_response && $decoded_response->success)
     $success = $decoded_response->success;
 }
  
-$result = $success ? 'Капча пройдена успешно!' : 'Неверная капча!';
+$result = $success ? 'Капча пройдена успешно!' : 'Подтвердите, что Вы не являетесь роботом!';
 echo $result;
