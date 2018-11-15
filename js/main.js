@@ -287,9 +287,9 @@ $(document).ready(function() {
 			preset: 'islands#icon',
 		},
 		{
-			lat : 56.863124,
-			long : 53.221300,
-			balloonContent: '<strong>ТВЦ «Кировский» паркинг (Строй Порт)</strong><br>г. Ижевск, ул. Кирова, 146 "А"<br>Тел.: 8-912-857-09-39, 8-922-687-62-10, 8-922-517-06-07',
+			lat : 56.866410,  
+			long : 53.218838,
+			balloonContent: '<strong>Склад</strong><br>г. Ижевск, ул. Коммунаров, 244 4 бокс<br>напротив автосалона "Русская ладья" ',
 			preset: 'islands#icon',
 		},
 		{
@@ -359,7 +359,7 @@ $(document).ready(function() {
 	          duration: 1000
 		});
 		myAction3 = new ymaps.map.action.Single({
-			center: [56.863124, 53.221300],
+			center: [56.866410, 53.218838],
 			zoom: 16,
 			duration: 1000
 		});
@@ -390,7 +390,7 @@ $(document).ready(function() {
 		$("#izhevsk, #holm").click(function(){
 			myMap.action.execute(myAction2);
 		});
-		$("#kirova").click(function(){
+		$("#kommun").click(function(){
 			myMap.action.execute(myAction3);
 		});
 		$("#pushk").click(function(){

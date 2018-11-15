@@ -7,7 +7,7 @@ $message = 'Имя: ' . $name . ". Номер телефона: " . $phoneNumber
 $headers = 'From: OctaspringRuson@yandex.ru' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-if(mail("mrpicklericklez@yandex.ru", "Заявка на партнерство с сайта Octaspring", $message, $headers)):
+if(mail("ruson.izh@yandex.ru", "Заявка на партнерство с сайта Octaspring", $message, $headers)):
 	die("message sent");
 else:
 	die("message not sent");
